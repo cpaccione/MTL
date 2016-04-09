@@ -1,0 +1,17 @@
+.hero-header {
+	background-image: url('../images/Martin.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 450px;
+}
+
+.hero-copy {
+	padding: 150px 0 150px 0;
+
+	h1 {
+		color: $white;
+		font-size: 5.625em;
+		font-weight: 300;
+		text-align: center;
+	}
+}

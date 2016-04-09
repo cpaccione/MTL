@@ -1,0 +1,26 @@
+html {
+  font-size: 100%; }
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1em; }
+
+.hero-header {
+  background-image: url("../images/Martin.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px; }
+
+.hero-copy {
+  padding: 150px 0 150px 0; }
+  .hero-copy h1 {
+    color: #ffffff;
+    font-size: 5.625em;
+    font-weight: 300;
+    text-align: center; }
+
+.logged-in .navbar-default {
+  padding-top: 33px; }
+
+/*# sourceMappingURL=mtl.css.map */
