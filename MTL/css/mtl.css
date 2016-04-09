@@ -7,9 +7,10 @@ body {
   font-size: 1em; }
 
 .hero-header {
-  background-image: url("../images/Martin.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 450px; }
 
 .hero-copy {
@@ -18,7 +19,12 @@ body {
     color: #ffffff;
     font-size: 5.625em;
     font-weight: 300;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 18px; }
+
+.intro-copy {
+  text-align: center; }
 
 .logged-in .navbar-default {
   padding-top: 33px; }

@@ -1,7 +1,8 @@
 .hero-header {
-	background-image: url('../images/Martin.jpg');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	height: 450px;
 }
 
@@ -13,5 +14,7 @@
 		font-size: 5.625em;
 		font-weight: 300;
 		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 18px;
 	}
 }
