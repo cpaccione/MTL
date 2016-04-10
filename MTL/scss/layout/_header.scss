@@ -1,7 +1,30 @@
+// navbar
+
+.navbar {
+	text-transform: uppercase;
+}
+
+.navbar-default {
+	background-color: rgba(255,255,255,.9);
+}
+
+.navbar-default .navbar-brand {
+	color: $orange;
+	font-size: 1.125em;
+	font-weight: bold;
+}
+
+.menu-main-container {
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+// Hero background images and copy
+
 .hero-header {
 	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-position: center center;
+	// background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 450px;
 }

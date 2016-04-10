@@ -21,26 +21,42 @@ Template Name: Home Page
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>MTL</h2>
+				<div class="underline-wrap">
+					<span class="underline">
+						<h2>MTL</h2>
+					</span>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<p><?php the_field('intro_copy'); ?></p>
+				<div class="intro-copy-wrap">
+					<p><?php the_field('intro_copy'); ?></p>	
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<button>Listen Now</button>
-			</div>
-		</div>
+        <div class="row text-center">
+            <div class="col-xs-12">
+                <div class="button-wrap">
+                    <a href="#"><button type="button" class="btn btn-primary btn-lg btn-block active">LISTEN NOW</button></a>
+                </div>
+            </div>
+        </div>
 	</div>
 </section>
 
 <section class="news">
-	<div></div>
-	<div></div>
-	<div></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="underline-wrap">
+					<span class="underline">
+						<h2>NEWS</h2>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 

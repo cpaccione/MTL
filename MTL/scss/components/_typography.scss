@@ -1,0 +1,46 @@
+// orange headings
+
+h2 {
+	font-size: 3.125em;
+	font-weight: 300;
+	letter-spacing: 5px;
+	color: $orange;
+}
+
+// contact form sub heading
+
+h3 {
+	font-size: 1.875em;
+	color: $grey;
+}
+
+// body copy 
+
+p {
+	font-size: 1em;
+	color: $grey;
+}
+
+// orange underline for h2 tags
+
+.underline {
+	display: block;
+	position: relative;
+
+	&-wrap {
+		width: 150px;
+		margin: 0 auto;
+		padding: 40px 0 35px 0;
+	}
+
+	:after {
+		content: "";
+		position: absolute;
+		bottom: -8px;
+		left: 26px;
+		background-color: $orange;
+		width: 90px;
+		height: 3px;
+	}
+}
+

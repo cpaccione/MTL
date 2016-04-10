@@ -18,5 +18,22 @@ Template Name: Contact
 </section>
 
 
+<section class="contact-copy">
+	<div class="container">
+		<div class="row">
+			<div class="underline-wrap">
+				<span class="underline">
+					<h2>EMAIL</h2>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>I'd love to hear from you so leave a mesage!</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <?php get_footer(); ?>

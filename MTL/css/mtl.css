@@ -6,10 +6,85 @@ body {
   font-weight: 300;
   font-size: 1em; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.btn-primary.active {
+  background-color: #ffffff;
+  color: #939598;
+  border-color: #F7941E;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms; }
+  .btn-primary.active:hover {
+    background-color: #939598;
+    color: #ffffff;
+    border-color: #F7941E;
+    text-decoration: none;
+    -webkit-transition: ease-out 200ms;
+    -moz-transition: ease-out 200ms;
+    -o-transition: ease-out 200ms;
+    transition: ease-out 200ms; }
+
+.button-wrap {
+  margin: 0 auto;
+  width: 160px;
+  margin-bottom: 50px;
+  box-shadow: none; }
+
+h2 {
+  font-size: 3.125em;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: #F7941E; }
+
+h3 {
+  font-size: 1.875em;
+  color: #939598; }
+
+p {
+  font-size: 1em;
+  color: #939598; }
+
+.underline {
+  display: block;
+  position: relative; }
+  .underline-wrap {
+    width: 150px;
+    margin: 0 auto;
+    padding: 40px 0 35px 0; }
+  .underline :after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 26px;
+    background-color: #F7941E;
+    width: 90px;
+    height: 3px; }
+
+.navbar {
+  text-transform: uppercase; }
+
+.navbar-default {
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.navbar-default .navbar-brand {
+  color: #F7941E;
+  font-size: 1.125em;
+  font-weight: bold; }
+
+.menu-main-container {
+  font-size: 0.75em;
+  font-weight: bold; }
+
 .hero-header {
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
   height: 450px; }
 
@@ -25,6 +100,18 @@ body {
 
 .intro-copy {
   text-align: center; }
+  .intro-copy-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px; }
+
+.news {
+  height: 450px;
+  background-color: #F1F2F2; }
+
+footer {
+  background-color: #0E2849;
+  color: #ffffff; }
 
 .logged-in .navbar-default {
   padding-top: 33px; }
