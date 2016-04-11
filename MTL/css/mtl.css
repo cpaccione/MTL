@@ -122,6 +122,9 @@ p {
   height: 450px;
   background-color: #F1F2F2; }
 
+.lyrics {
+  display: none; }
+
 .quote {
   padding: 50px 0 0 0;
   color: #F7941E; }

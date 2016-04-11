@@ -18,5 +18,11 @@ Template Name: Media
 </section>
 
 
+<section class="music">
+	
+	
+
+</section>
+
 
 <?php get_footer(); ?>
