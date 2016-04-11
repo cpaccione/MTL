@@ -79,12 +79,16 @@ p {
   text-transform: uppercase; }
 
 .navbar-default {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(14, 40, 73, 0.9);
+  border-color: rgba(14, 40, 73, 0.9); }
 
 .navbar-default .navbar-brand {
   color: #F7941E;
   font-size: 1.125em;
   font-weight: bold; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff; }
 
 .menu-main-container {
   font-size: 0.75em;
@@ -92,7 +96,8 @@ p {
 
 .hero-header {
   background-size: cover;
-  background-position: 0px -400px;
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   height: 450px; }
 
@@ -130,8 +135,7 @@ p {
 
 .quote-copy {
   width: 93%;
-  float: left;
-  padding-right: 85px; }
+  float: left; }
   .quote-copy h4 {
     line-height: 38px; }
 

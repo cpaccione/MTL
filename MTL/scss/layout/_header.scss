@@ -5,13 +5,18 @@
 }
 
 .navbar-default {
-	background-color: rgba(255,255,255,.9);
+	background-color: $nav-blue;
+	border-color: $nav-blue;
 }
 
 .navbar-default .navbar-brand {
 	color: $orange;
 	font-size: 1.125em;
 	font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: $white;
 }
 
 .menu-main-container {
@@ -23,8 +28,8 @@
 
 .hero-header {
 	background-size: cover;
-	background-position: 0px -400px;
-	// background-repeat: no-repeat;
+	background-position: 0px -200px;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 450px;
 }
