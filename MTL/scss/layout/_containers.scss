@@ -18,8 +18,16 @@
 
 // Music Page
 
+.mp3Player a {
+	padding-right: 10px;
+}
+
 .lyrics {
 	display: none;
+
+	h2 {
+		font-size: 1.5625em;
+	}
 }
 
 a.expand-lyrics {
