@@ -19,9 +19,18 @@ Template Name: Media
 
 
 <section class="music">
-	
-	
-
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="underline-wrap">
+					<h2>VIDEOS</h2>
+					<div class="line">
+						<hr class="orange">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 

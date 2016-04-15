@@ -27,3 +27,8 @@
   margin-bottom: 50px;
   box-shadow: none;
 }
+
+.fa-play:before,
+.fa-pause:before {
+	color: $orange;
+}

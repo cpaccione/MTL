@@ -22,9 +22,10 @@ Template Name: Home Page
 		<div class="row">
 			<div class="col-md-12">
 				<div class="underline-wrap">
-					<span class="underline">
-						<h2>MTL</h2>
-					</span>
+					<h2>MTL</h2>
+					<div class="line">
+						<hr class="orange">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -50,9 +51,10 @@ Template Name: Home Page
 		<div class="row">
 			<div class="col-md-12">
 				<div class="underline-wrap">
-					<span class="underline">
-						<h2>NEWS</h2>
-					</span>
+					<h2>NEWS</h2>
+					<div class="line">
+						<hr class="orange">
+					</div>
 				</div>
 			</div>
 		</div>

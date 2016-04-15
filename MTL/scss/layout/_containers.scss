@@ -22,6 +22,16 @@
 	display: none;
 }
 
+a.expand-lyrics {
+	color: $orange;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
 
 // About Page
 

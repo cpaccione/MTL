@@ -20,83 +20,86 @@ Template Name: Music
 <section class="music">
 
 <div class="container">
+
 	<div class="row">
 		<div class="col-md-12">
 			<div class="underline-wrap">
-				<span class="underline">
-					<h2>MUSIC</h2>
-				</span>
+				<h2>MUSIC</h2>
+				<div class="line">
+					<hr class="orange">
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<?php if( have_rows('album_section') ): ?>
+
+		<?php while( have_rows('album_section') ): the_row();  ?>
 
 	<div class="row">
-		<div class="col-md-6"></div>
 		<div class="col-md-6">
+			<img src="<?php the_sub_field('album_cover'); ?>">
+			<h3><?php the_sub_field('album_title'); ?></h3>
+		</div>
+		
+
+		<div class="col-md-6">
+
+			<?php if( have_rows('song_list') ): ?>
+				<?php while( have_rows('song_list') ): the_row(); ?>
+
+
+			<hr class="grey">
 			<div class="song-row">
-			<div class="row">
-				<div class="col-md-10">
-					<audio id="yourAudio"
-						<source src="<?php bloginfo('template_directory');?>/audio/01_Im_Insecure_Immature_Inefficient.mp3" preload="none">
-						</source>
-					</audio>
-					<a href="#" id="audioControl"><i class="fa fa-play"></i></a>
-					I'm Insecure Immature Inefficient Inconsistent
-				</div>
-				<div class="col-md-2">
-			
-					<a href="#" class="expand-lyrics">Lyrics</a>
+				
+				<div class="row">
+					<div class="col-md-10">
 
-				</div>
-			</div>
-			<div class="row">
-				<div class="lyrics">
-					CRAZY CRAZY CRAZY
+						<audio id="yourAudio" src="<?php //the_sub_field('song_upload'); ?>" preload="none"></audio>
 
-					You’re makin’ me crazy
-					You’re drivin’ me insane
-					Why can’t you try to be
-					A little more humane
+<!-- <a href="" onclick="this.firstChild.play()"><audio id="audioControl" src="<?php the_sub_field('song_upload'); ?>"></audio><i class="fa fa-play"></i></a> -->
 
-					One moment you’re happy
-					The next moment you’re sad
-					Turn around you’re good
-					Next you’re feelin’ bad
+						<!-- <a href="#" id="audioControl"><i class="fa fa-play"></i></button></a> -->
 
-					You’re makin’ me crazy
-					You’re drivin’ me insane
-					Why can’t you try to be
-					A little more humane
-				</div>
-			</div>
-			</div>
-			<div class="row">
-				<div class="song-row">
-					<a href="#" class="expand-lyrics">Lyrics</a>
-					<div class="lyrics">
-						CRAZY CRAZY CRAZY
+						<audio id="myAudio"></audio>
 
-						You’re makin’ me crazy
-						You’re drivin’ me insane
-						Why can’t you try to be
-						A little more humane
+						<div class="mp3Player" data-src="<?php the_sub_field('song_upload'); ?>" data-pos="0">
+						    <!-- <button class="btnPlayPause button">►||</button> -->
+						    <a href="#" class="btnPlayPause button"><i class="fa fa-play"></i></a>
+<!-- 						    <button class="btnMute button">MUTE</button>
+						    <span class="infoLabel">Audio #1</span> -->
+						    <?php the_sub_field('song_title'); ?>
+						</div>
 
-						One moment you’re happy
-						The next moment you’re sad
-						Turn around you’re good
-						Next you’re feelin’ bad
+							
 
-						You’re makin’ me crazy
-						You’re drivin’ me insane
-						Why can’t you try to be
-						A little more humane
 					</div>
+
+					<div class="col-md-2">
+						<a href="#" class="expand-lyrics">LYRICS</a>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="lyrics">
+								<?php the_sub_field('song_lyrics'); ?>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
+
+				<?php endwhile; ?>
+			<?php endif; ?>
 
 
 		</div>
 	</div>
+
+
+	<?php endwhile; ?>
+<?php endif; ?>
 
 </div>
 

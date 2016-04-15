@@ -33,26 +33,4 @@ p {
 	color: $grey;
 }
 
-// orange underline for h2 tags
-
-.underline {
-	display: block;
-	position: relative;
-
-	&-wrap {
-		width: 150px;
-		margin: 0 auto;
-		padding: 40px 0 35px 0;
-	}
-
-	:after {
-		content: "";
-		position: absolute;
-		bottom: -8px;
-		left: 26px;
-		background-color: $orange;
-		width: 90px;
-		height: 3px;
-	}
-}
 

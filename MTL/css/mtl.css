@@ -6,6 +6,21 @@ body {
   font-weight: 300;
   font-size: 1em; }
 
+hr.orange {
+  border-top: 2px solid #F7941E;
+  margin-top: 0px; }
+
+hr.grey {
+  border-top: 2px solid #F1F2F2;
+  margin: 10px 0 10px 0; }
+
+.underline-wrap {
+  text-align: center; }
+
+.line {
+  max-width: 90px;
+  margin: 0 auto; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -37,6 +52,10 @@ a {
   margin-bottom: 50px;
   box-shadow: none; }
 
+.fa-play:before,
+.fa-pause:before {
+  color: #F7941E; }
+
 h2 {
   font-size: 3.125em;
   font-weight: 300;
@@ -58,22 +77,6 @@ h5 {
 p {
   font-size: 1em;
   color: #939598; }
-
-.underline {
-  display: block;
-  position: relative; }
-  .underline-wrap {
-    width: 150px;
-    margin: 0 auto;
-    padding: 40px 0 35px 0; }
-  .underline :after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 26px;
-    background-color: #F7941E;
-    width: 90px;
-    height: 3px; }
 
 .navbar {
   text-transform: uppercase; }
@@ -124,6 +127,13 @@ p {
 
 .lyrics {
   display: none; }
+
+a.expand-lyrics {
+  color: #F7941E;
+  text-decoration: none;
+  text-transform: uppercase; }
+  a.expand-lyrics:hover {
+    color: #0E2849; }
 
 .quote {
   padding: 50px 0 0 0;

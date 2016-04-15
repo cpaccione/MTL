@@ -21,10 +21,13 @@ Template Name: Contact
 <section class="contact-copy">
 	<div class="container">
 		<div class="row">
-			<div class="underline-wrap">
-				<span class="underline">
+			<div class="col-md-12">
+				<div class="underline-wrap">
 					<h2>EMAIL</h2>
-				</span>
+					<div class="line">
+						<hr class="orange">
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">

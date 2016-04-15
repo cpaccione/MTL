@@ -8,6 +8,27 @@ body {
 	font-size: 1em;
 }
 
+hr.orange {
+	border-top: 2px solid $orange;
+	margin-top: 0px;
+}
+
+hr.grey {
+	border-top: 2px solid $secondary-grey;
+	margin: 10px 0 10px 0;
+}
+
+// orange underline for h2 tags
+
+.underline-wrap {
+	text-align: center;
+}
+
+.line {
+	max-width: 90px;
+	margin: 0 auto;
+}
+
 a {
 	text-decoration: none;
 
