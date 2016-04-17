@@ -1,4 +1,21 @@
 footer {
 	background-color: $blue;
 	color: $white;
+	min-height: 120px;
+}
+
+.footer-copy {
+
+	padding-top: 25px; 
+
+	h5 {
+		font-size: 0.9375em;
+		color: $white;
+	}
+
+	h6 {
+		font-size: 0.625em;
+		color: $white;
+	}
+	
 }
