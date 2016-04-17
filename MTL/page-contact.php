@@ -32,7 +32,19 @@ Template Name: Contact
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<h3>I'd love to hear from you so leave a mesage!</h3>
+				<div class="subhead">
+					<h3>I'd love to hear from you so leave a mesage!</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<?php echo do_shortcode( '[contact-form-7 id="44" title="MTL Form"]' ); ?>
 			</div>
 		</div>
 	</div>

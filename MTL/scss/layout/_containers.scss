@@ -70,3 +70,36 @@ a.expand-lyrics {
 .tag-line {
 	padding: 25px 0 25px 0;
 }
+
+// Contact Page
+
+.subhead h3 {
+	text-align: center;
+	font-size: 1.875em;
+}
+
+// Contact Form 7
+
+input, select, textarea {
+	width: 100%;
+	background-color: #F1F2F2;
+	border: 0px;
+}
+
+.wpcf7 p {
+	text-align: center;
+	font-size: 1.5625em;
+	color: $orange;
+}
+
+input[type="text"],
+input[type="email"] {
+	min-height: 78px;
+}
+
+input[type="submit"] {
+	width: 160px;
+	height: 52px;
+	border: 1px solid $orange;
+	background-color: transparent;
+}
