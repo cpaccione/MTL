@@ -15,6 +15,10 @@
 	font-weight: bold;
 }
 
+ .navbar-default .navbar-brand:hover {
+ 	color: $white;
+ }
+
 .navbar-default .navbar-nav > li > a {
 	color: $white;
 }
@@ -22,6 +26,11 @@
 .menu-main-container {
 	font-size: 0.75em;
 	font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav > .active > a:hover {
+	color: $orange;
 }
 
 // Hero background images and copy

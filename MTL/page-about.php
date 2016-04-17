@@ -72,12 +72,19 @@ Template Name: About
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="<?php bloginfo('template_directory'); ?>/images/about-photo-past.jpg">
+				<figure class="figure">
+					<img class="figure-img" src="<?php bloginfo('template_directory'); ?>/images/about-photo-past.jpg" alt="Mark Thomas Lamber - MTL">
+					<figcaption class="figure-caption text-sm-center">MUSKEGAN, MI - 19XX</figcaption>
+				</figure>
 			</div>
 			<div class="col-sm-6">
-				<img src="<?php bloginfo('template_directory'); ?>/images/about-photo-present.jpg">
+				<figure class="figure">
+					<img class="figure-img" src="<?php bloginfo('template_directory'); ?>/images/about-photo-present.jpg" alt="Mark Thomas Lambert - MTL">
+					<figcaption class="figure-caption text-sm-center">NASHVILLE, TN - 2015</figcaption>
+				</figure>
 			</div>
 		</div>
+		<hr>
 	</div>
 </section>
 

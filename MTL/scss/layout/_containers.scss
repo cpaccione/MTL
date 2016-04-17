@@ -71,6 +71,21 @@ a.expand-lyrics {
 	padding: 25px 0 25px 0;
 }
 
+figcaption {
+	color: $orange;
+	text-align: center;
+	padding: 20px 0 10px 0;
+}
+
+.about-first-copy,
+.about-second-copy {
+
+	p {
+		margin-bottom: 30px;	
+	}
+	
+}
+
 // Contact Page
 
 .subhead h3 {

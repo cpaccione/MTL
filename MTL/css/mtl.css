@@ -90,12 +90,20 @@ p {
   font-size: 1.125em;
   font-weight: bold; }
 
+.navbar-default .navbar-brand:hover {
+  color: #ffffff; }
+
 .navbar-default .navbar-nav > li > a {
   color: #ffffff; }
 
 .menu-main-container {
   font-size: 0.75em;
   font-weight: bold; }
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #F7941E; }
 
 .hero-header {
   background-size: cover;
@@ -159,6 +167,15 @@ a.expand-lyrics {
 
 .tag-line {
   padding: 25px 0 25px 0; }
+
+figcaption {
+  color: #F7941E;
+  text-align: center;
+  padding: 20px 0 10px 0; }
+
+.about-first-copy p,
+.about-second-copy p {
+  margin-bottom: 30px; }
 
 .subhead h3 {
   text-align: center;
