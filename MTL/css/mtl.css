@@ -15,7 +15,8 @@ hr.grey {
   margin: 10px 0 10px 0; }
 
 .underline-wrap {
-  text-align: center; }
+  text-align: center;
+  padding-top: 35px; }
 
 .line {
   max-width: 90px;
@@ -179,7 +180,8 @@ figcaption {
 
 .subhead h3 {
   text-align: center;
-  font-size: 1.875em; }
+  font-size: 1.875em;
+  padding-bottom: 40px; }
 
 input, select, textarea {
   width: 100%;
