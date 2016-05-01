@@ -18,6 +18,10 @@
 
 #menu-main {
 	padding-right: 25px;
+
+	@media #{$brk-narrow} {
+		padding-right: 0px;
+	}
 }
 
  .navbar-default .navbar-brand:hover {
