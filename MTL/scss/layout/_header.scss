@@ -13,6 +13,11 @@
 	color: $orange;
 	font-size: 1.125em;
 	font-weight: bold;
+	padding-left: 25px;
+}
+
+#menu-main {
+	padding-right: 25px;
 }
 
  .navbar-default .navbar-brand:hover {
@@ -41,6 +46,10 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 450px;
+
+	@media #{$brk-small} {
+		height: 300px;
+	}
 }
 
 .hero-copy {
@@ -53,5 +62,15 @@
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 18px;
+
+	@media #{$brk-small} {
+		font-size: 3em;
+		line-height: 300px;
+	}
+
+	}
+
+	@media #{$brk-small} {
+		padding: 0px;
 	}
 }

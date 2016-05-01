@@ -18,28 +18,45 @@
 
 // Music Page
 
+.music {
+	padding: 60px 0 60px 0;
+	background-color: $secondary-grey;
+
+	a {
+		color: $orange;
+		text-decoration: none;
+		text-transform: uppercase
+	}
+
+	a:hover {
+		color: $blue;
+	}
+}
+
+.music-white {
+	background-color: $white;
+}
+
 .mp3Player a {
 	padding-right: 10px;
 }
 
 .lyrics {
 	display: none;
+	padding: 20px;
 
 	h2 {
 		font-size: 1.5625em;
 	}
 }
 
-a.expand-lyrics {
-	color: $orange;
-	text-decoration: none;
-	text-transform: uppercase;
-
-	&:hover {
-		color: $blue;
-	}
+.white {
+	background-color: $white;
 }
 
+.grey {
+	background-color: $secondary-grey;
+}
 
 // About Page
 

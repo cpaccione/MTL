@@ -39,7 +39,7 @@ Template Name: Home Page
         <div class="row text-center">
             <div class="col-xs-12">
                 <div class="button-wrap">
-                    <a href="#"><button type="button" class="btn btn-primary btn-lg btn-block active">LISTEN NOW</button></a>
+                    <a href="/music"><button type="button" class="btn btn-primary btn-lg btn-block active">LISTEN NOW</button></a>
                 </div>
             </div>
         </div>
