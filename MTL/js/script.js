@@ -3,13 +3,29 @@ jQuery(document).ready(function($) {
 	// Add bootstrap's 'img-responsive' class to all images
   $('img').addClass('img-responsive');
 
+  // fancybox
+  $(".fancybox").fancybox({
+
+  	openEffect	: 'elastic',
+  	closeEffect	: 'elastic',
+
+  	afterLoad: function() {
+        this.title = '<a href="' + this.href + '" target="_blank">Download</a> ' + this.title;
+    },
+
+    helpers : {
+        title: {
+            type: 'inside'
+        }
+    }
+
+  });
 
   $('.song-row').on('click', '.expand-lyrics', function(event) {
   	event.stopPropagation();
   	event.preventDefault();
   	$(this).closest('.song-row').find('.lyrics').slideToggle();
   });
-
 
  //  var yourAudio = document.getElementById('yourAudio'),
  //    ctrl = document.getElementById('audioControl');
@@ -69,6 +85,7 @@ jQuery(document).ready(function($) {
 			};
 		}
 	});
+
 	$(document.body).on('click', '.btnMute',function(e){
 		myAudio.muted = !myAudio.muted;
 		$('.btnMute').each(function(){

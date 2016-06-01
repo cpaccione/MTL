@@ -18,8 +18,13 @@
 
 // Music Page
 
+.scroll-target {
+	padding-top: 30px;
+	visibility: hidden;
+}
+
 .music {
-	padding: 60px 0 60px 0;
+	padding: 0 0 60px 0;
 	background-color: $secondary-grey;
 
 	a {
@@ -30,6 +35,10 @@
 
 	a:hover {
 		color: $blue;
+	}
+
+	img {
+		padding-top: 10px;
 	}
 }
 
@@ -101,6 +110,17 @@ figcaption {
 		margin-bottom: 30px;	
 	}
 	
+}
+
+// Media Page
+
+.photo-wrap {
+	margin: 0 auto;
+	max-width: 320px;
+}
+
+.photo-row {
+	padding-bottom: 20px;
 }
 
 // Contact Page

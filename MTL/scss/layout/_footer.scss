@@ -1,12 +1,31 @@
-ul.social-media li {
-	display: inline-block;
+
+
+ul.social-media {
+  padding: 0px;
+
+  @media #{$brk-narrow} {
+    text-align: center;
+  }
+ 
+  li {
+    display: inline-block;
+    padding-top: 35px;
+
+    @media #{$brk-narrow} {
+      padding-top: 0px;
+    }
+
+  }
+
 }
 
 /* SOCIAL MEDIA */
 
   .icon-link {
-  width: 60px;
-  height: 60px;
+  // width: 60px;
+  // height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: $white;
   /*background-color: #ffffff;*/
   line-height: 60px;
@@ -156,12 +175,14 @@ ul.social-media li {
 .icon-link:hover {
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
-  height: 56px;
-  line-height: 56px;
-  width: 56px;
+  // height: 56px;
+  line-height: 0px;
+  // width: 56px;
+  height: 50px;
+  width: 50px;
   background-color: #fff;
-  background-color: $white;
-  border: 2px solid $orange;
+  background-color: $orange;
+  // border: 2px solid $orange;
 }
 .icon-link:hover.facebook {
   /*border: 2px solid #3b5998;*/
@@ -207,12 +228,13 @@ ul.social-media li {
   /*border: 2px solid #517fa4;*/
 }
 .icon-link:hover .fa {
-  line-height: 56px;
+  line-height: 50px;
 }
 .icon-link:hover .fa-facebook {
   color: #3b5998;
   color: #363794;
   color: $orange;
+  color: $white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
@@ -249,6 +271,7 @@ ul.social-media li {
   /*color: #df1c31;*/
   color: #ffffff;
   color: $orange;
+  color: $white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
@@ -265,6 +288,7 @@ ul.social-media li {
 }
 .icon-link:hover .fa-envelope {
   color: $orange;
+  color: $white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
@@ -286,9 +310,11 @@ ul.social-media li {
   transition: color 150ms ease-in-out;
 }
 .icon-link .fa {
-  color: $orange;
-  line-height: 60px;
-  font-size: 36px;
+  color: $blue;
+  // line-height: 60px;
+  line-height: 0px;
+  // font-size: 36px;
+  font-size: 30px;
 }
 
 
@@ -312,5 +338,9 @@ footer {
 		font-size: 0.625em;
 		color: $white;
 	}
+
+  @media #{$brk-narrow} {
+    text-align: center;
+  }
 	
 }

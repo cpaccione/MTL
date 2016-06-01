@@ -46,6 +46,7 @@ Template Name: Music
 <div class="container">
 
 	<div class="row">
+	<h3 class="scroll-target"><span id="<?php the_sub_field('smooth_scroll'); ?>"></span>scroll target</h3>
 		<div class="col-md-6">
 			<img src="<?php the_sub_field('album_cover'); ?>">
 			<h3><?php the_sub_field('album_title'); ?></h3>
