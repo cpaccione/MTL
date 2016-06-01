@@ -20,26 +20,13 @@ Template Name: About
 <section class="quote">
 	
 	<div class="container">
-
 		<div class="row">
 			<div class="col-md-12">
-				<div class="quote-wrap">
-					<i class="fa fa-quote-left"></i>
-				</div>
 				<div class="quote-copy">
-					<h4>If I heard a song I like or if I went to a concert, that voice in the back of my head would say, wow that’s great, wouldn’t  it be fun to work on your music? But it never happened."</h4>
+					<h4>"If I heard a song I liked or if I went to a concert, that voice in the back of my head would say, wow that’s great, wouldn’t  it be fun to work on your music? But it never happened."</h4>
 				</div>
 			</div>
 		</div>
-
-		<div class="row">
-			<div class=col-md-12>
-				<div class="tag-line">
-					<h5>NEVER TOO LATE</h5>
-				</div>
-			</div>
-		</div>
-
 	</div>
 
 

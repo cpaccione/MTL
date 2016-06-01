@@ -24,11 +24,14 @@ ul.social-media {
   .icon-link {
   // width: 60px;
   // height: 60px;
-  width: 50px;
-  height: 50px;
+  // width: 50px;
+  // height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: $white;
   /*background-color: #ffffff;*/
-  line-height: 60px;
+  // line-height: 60px;
+  line-height: 47px;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
@@ -178,8 +181,10 @@ ul.social-media {
   // height: 56px;
   line-height: 0px;
   // width: 56px;
-  height: 50px;
-  width: 50px;
+  // height: 50px;
+  // width: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #fff;
   background-color: $orange;
   // border: 2px solid $orange;
@@ -228,7 +233,8 @@ ul.social-media {
   /*border: 2px solid #517fa4;*/
 }
 .icon-link:hover .fa {
-  line-height: 50px;
+  // line-height: 50px;
+  line-height: 44px;
 }
 .icon-link:hover .fa-facebook {
   color: #3b5998;
@@ -314,7 +320,8 @@ ul.social-media {
   // line-height: 60px;
   line-height: 0px;
   // font-size: 36px;
-  font-size: 30px;
+  // font-size: 30px;
+  font-size: 25px;
 }
 
 

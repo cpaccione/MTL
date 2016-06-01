@@ -33,7 +33,7 @@ Template Name: Contact
 		<div class="row">
 			<div class="col-md-12">
 				<div class="subhead">
-					<h3>I'd love to hear from you so leave a mesage!</h3>
+					<p>I'd love to hear from you so leave a mesage!</p>
 				</div>
 			</div>
 		</div>
