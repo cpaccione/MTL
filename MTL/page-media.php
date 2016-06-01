@@ -30,6 +30,17 @@ Template Name: Media
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="video-wrapper">
+					<video width="100%" height="100%" controls alt="MTL featured video">
+						<source src="<?php bloginfo('template_directory'); ?>/video/nashville_tennessee.mp4" type="video/mp4">
+						<p>Your browser does not support this video file.</p>
+					</video>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
