@@ -1,10 +1,13 @@
 jQuery(document).ready(function($) {
 
 	// Add bootstrap's 'img-responsive' class to all images
-  $('img').addClass('img-responsive');
+	$('img').addClass('img-responsive');
 
-  // fancybox
-  $(".fancybox").fancybox({
+	// Bootstrap dropdown on hover
+	$('.navbar [data-toggle="dropdown"]').bootstrapDropdownHover({});
+
+	// fancybox
+	$(".fancybox").fancybox({
 
   	openEffect	: 'elastic',
   	closeEffect	: 'elastic',

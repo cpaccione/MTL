@@ -42,6 +42,30 @@
 	color: $orange;
 }
 
+// Dropdown Menu
+
+.navbar-nav > li > .dropdown-menu {
+	background-color: rgba(255,255,255,.7);
+	border-radius: 0px;
+}
+
+.dropdown-menu > li > a:hover {
+	background-color: transparent;
+	color: $orange;
+}
+
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+	background-color: transparent;
+	color: $orange;
+}
+
+.dropdown-menu > .active > a {
+	background-color: transparent;
+	color: $blue;
+}
+
+
 // Hero background images and copy
 
 .hero-header {
