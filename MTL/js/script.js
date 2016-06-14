@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
   	closeEffect	: 'elastic',
 
   	afterLoad: function() {
-        this.title = '<a href="' + this.href + '" target="_blank">Download</a> ' + this.title;
+        this.title = '<a href="' + this.href + '" download>Click to Download</a> ' + this.title;
     },
 
     helpers : {
@@ -23,6 +23,20 @@ jQuery(document).ready(function($) {
     }
 
   });
+
+	//Videos
+
+	$(".youtube-videos").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'elastic',
+		closeEffect	: 'elastic'
+	});
 
   $('.song-row').on('click', '.expand-lyrics', function(event) {
   	event.stopPropagation();

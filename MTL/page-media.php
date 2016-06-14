@@ -18,8 +18,9 @@ Template Name: Media
 </section>
 
 
-<section class="music">
+<section class="music-videos">
 	<div class="container">
+
 		<div class="row">
 			<div class="col-md-12">
 				<div class="underline-wrap">
@@ -41,6 +42,53 @@ Template Name: Media
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+
+			<?php if( have_rows('youtube_gallery') ): ?>
+
+				<?php while(  have_rows('youtube_gallery') ): the_row(); 
+
+				//vars
+				$link = get_sub_field('youtube_link');
+				$thumbnail = get_sub_field('youtube_thumbnail');
+				$song_title = get_sub_field('song_title');
+				$album_title = get_sub_field('album_title');
+
+				?>
+
+				<?php if($counter % 3 === 0) : echo '<div class="row photo-row">'; endif; ?>
+
+					<div class="col-sm-4">
+						<div class="youtube-gallery">
+							<a class="youtube-videos fancybox.iframe" href="<?php echo $link; ?>?autoplay=1"><img class="center-block" src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
+						</div>
+						<div class="video-info">
+							<h3><?php echo $song_title; ?></h3>
+							<p><?php echo $album_title; ?></p>
+						</div>
+					</div>
+
+				<?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
+
+			<?php endwhile; ?>
+
+		<?php endif; ?>
+
+	
+		</div>
+
+		 <div class="row text-center">
+            <div class="col-xs-12">
+            	<div class="youtube-cta">
+            		<h5>SEE MORE VIDEOS</h5>
+            	</div>
+                <div class="button-wrap">
+                    <a href="https://www.youtube.com/channel/UChiB1DVDNSRu-NSMDSxSFag" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block active">VISIT YOUTUBE</button></a>
+                </div>
+            </div>
+        </div>
+
 	</div>
 </section>
 
@@ -74,7 +122,7 @@ Template Name: Media
 
 					<div class="col-sm-4">
 						<div class="photo-wrap">
-							<a class="fancybox" href="<?php the_sub_field('photo'); ?>" data-fancybox-group="gallery" title="Lorem Ipsum"><img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
+							<a class="fancybox" href="<?php the_sub_field('photo'); ?>" data-fancybox-group="gallery" title=""><img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
 						</div>
 					</div>
 

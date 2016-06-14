@@ -113,11 +113,15 @@ figcaption {
 
 // Media Page
 
-// Videos
 
 .video-wrapper {
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
+	padding: 20px 0 100px 0px;
+
+	@media #{$brk-small} {
+		width: 90%;
+	}
 }
 
 .photo-wrap {
@@ -126,7 +130,46 @@ figcaption {
 }
 
 .photo-row {
-	padding-bottom: 20px;
+	padding-bottom: 25px;
+}
+
+.fancybox-title {
+	text-align: center;
+
+	a {
+		color: $orange;
+
+		&:hover {
+			color: $blue;
+		}
+
+	}
+
+}
+
+// YouTube Videos
+
+.youtube-gallery {
+	
+}
+
+.video-info {
+	text-align: center;
+
+	h3 {
+		font-size: 1.25em;
+		text-transform: uppercase;
+		color: $orange;
+	}
+
+	p {
+		font-size: 0.9375em;
+		color: $grey;
+	}
+}
+
+.youtube-cta {
+	padding: 25px 0 20px 0;
 }
 
 // Contact Page
