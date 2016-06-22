@@ -61,7 +61,7 @@ Template Name: Media
 
 					<div class="col-sm-4">
 						<div class="youtube-gallery">
-							<a class="youtube-videos fancybox.iframe" href="<?php echo $link; ?>?autoplay=1"><img class="center-block" src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
+							<a class="youtube-videos fancybox.iframe" href="<?php echo $link; ?>?autoplay=1"><img class="center-block" src="<?php echo $thumbnail; ?>" alt="Mark Thomas Lambert"></a>
 						</div>
 						<div class="video-info">
 							<h3><?php echo $song_title; ?></h3>
