@@ -113,7 +113,10 @@ Template Name: Media
 
 
 			// $photo = get_sub_field('photo');
+			$photo = get_sub_field('photo');
 			$thumbnail = get_sub_field('thumbnail');
+			// $lowres = get_sub_field('lowres');
+			// $hires = get_sub_field('hires');
 
 
 			?>
@@ -121,8 +124,8 @@ Template Name: Media
 				<?php if($counter % 3 === 0) : echo '<div class="row photo-row">'; endif; ?>
 
 					<div class="col-sm-4">
-						<div class="photo-wrap">
-							<a class="fancybox" href="<?php the_sub_field('photo'); ?>" data-fancybox-group="gallery" title=""><img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
+						<div class="photo-wrap">			
+							<a href="<?php echo $photo['url']; ?>" data-lightbox="MTL" data-title="<a href='<?php the_sub_field('hires'); ?>' download='MTL Photo' target='_blank'>HIGH RES</a> OR <a href='<?php the_sub_field('lowres'); ?>' download='MTL Photo' target='_blank'>LOW RES</a>"><img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
 						</div>
 					</div>
 
