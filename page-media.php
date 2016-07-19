@@ -8,6 +8,13 @@ Template Name: Media
 
 ?>
 
+<?php
+
+$counterone = 0;
+$countertwo = 0;
+
+?>
+
 
 <?php get_header(); ?>
 
@@ -57,7 +64,7 @@ Template Name: Media
 
 				?>
 
-				<?php if($counter % 3 === 0) : echo '<div class="row photo-row">'; endif; ?>
+				<?php if($counterone % 3 === 0) : echo '<div class="row photo-row">'; endif; ?>
 
 					<div class="col-sm-4">
 						<div class="youtube-gallery">
@@ -69,7 +76,7 @@ Template Name: Media
 						</div>
 					</div>
 
-				<?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
+				<?php $counterone++; if($counterone % 3 === 0) : echo '</div>'; endif; ?>
 
 			<?php endwhile; ?>
 
@@ -111,17 +118,14 @@ Template Name: Media
 
 			<?php while( have_rows('photo_section') ): the_row(); 
 
-
-			// $photo = get_sub_field('photo');
+			// vars
 			$photo = get_sub_field('photo');
 			$thumbnail = get_sub_field('thumbnail');
-			// $lowres = get_sub_field('lowres');
-			// $hires = get_sub_field('hires');
 
-
+			
 			?>
 
-				<?php if($counter % 3 === 0) : echo '<div class="row photo-row">'; endif; ?>
+				<?php if($countertwo % 3 === 0) : echo '<div class="row photo-row">'; endif; ?>
 
 					<div class="col-sm-4">
 						<div class="photo-wrap">			
@@ -129,7 +133,7 @@ Template Name: Media
 						</div>
 					</div>
 
-				<?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
+				<?php $countertwo++; if($countertwo % 3 === 0) : echo '</div>'; endif; ?>
 		
 			<?php endwhile; ?>
 
