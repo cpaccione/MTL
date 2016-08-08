@@ -1,4 +1,9 @@
-<?php 
+<?php
+
+// theme support
+
+add_theme_support( 'post-thumbnails' ); // this allows you to set a featured image
+add_theme_support('woocommerce'); // removes message from admin that WooCommerce is not supported
 
 function theme_styles() {
 	// wp_enqueue_style( 'jqueryui_smoothness', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css' );
@@ -42,9 +47,6 @@ register_nav_menus( array(
 ) );
 
 require_once('wp_bootstrap_navwalker.php'); // Register Custom Navigation Walker
-
-add_theme_support( 'post-thumbnails' ); // this allows you to set a featured image
-add_theme_support('woocommerce'); // removes message from admin that WooCommerce is not supported
 
 add_action( 'wp_enqueue_scripts', 'prefix_enqueue_awesome' );
 /**
