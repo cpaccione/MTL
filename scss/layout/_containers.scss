@@ -213,3 +213,20 @@ input[type="submit"] {
 		color: $white;
 	}
 }
+
+// WooCommerce
+
+.single-product {
+	margin-top: 0px;
+}
+
+.store {
+	padding-top: 50px;
+}
+
+.woocommerce #reviews #comments h2,
+.products h2 {
+	font-size: 1.25em;
+	letter-spacing: inherit;
+}
+
