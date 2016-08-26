@@ -1,12 +1,10 @@
 <?php
 
 // theme support
-
 add_theme_support( 'post-thumbnails' ); // this allows you to set a featured image
 add_theme_support('woocommerce'); // removes message from admin that WooCommerce is not supported
 
 function theme_styles() {
-	// wp_enqueue_style( 'jqueryui_smoothness', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css' );
 	wp_enqueue_style( 'font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' );
 	wp_enqueue_style( 'roboto_css', 'https://fonts.googleapis.com/css?family=Roboto:300' );
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
@@ -26,7 +24,7 @@ function theme_js() {
 	// wp_register_script( 'jquery_ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', array('jquery'), '', true );
 	$wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
 	$wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
-	
+
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
 	wp_enqueue_script('bootstrap_hover', get_template_directory_uri() . '/js/jquery.bootstrap-dropdown-hover.min.js', array('jquery', 'bootstrap_js'), '', true);
 	wp_enqueue_script( 'smooth_scroll_js', get_template_directory_uri() . '/js/jquery.smooth-scroll.min.js', array('jquery'), '', true );

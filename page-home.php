@@ -32,17 +32,17 @@ Template Name: Home Page
 		<div class="row">
 			<div class="col-md-12">
 				<div class="intro-copy-wrap">
-					<p><?php the_field('intro_copy'); ?></p>	
+					<p><?php the_field('intro_copy'); ?></p>
 				</div>
 			</div>
 		</div>
-        <div class="row text-center">
-            <div class="col-xs-12">
-                <div class="button-wrap">
-                    <a href="/music"><button type="button" class="btn btn-primary btn-lg btn-block active">LISTEN NOW</button></a>
-                </div>
-            </div>
-        </div>
+      <div class="row text-center">
+          <div class="col-xs-12">
+              <div class="button-wrap">
+                  <a href="/music"><button type="button" class="btn btn-primary btn-lg btn-block active">LISTEN NOW</button></a>
+              </div>
+          </div>
+      </div>
 	</div>
 </section>
 
@@ -60,8 +60,6 @@ Template Name: Home Page
 		</div>
 	</div>
 </section>
-
-
 
 
 <?php get_footer(); ?>
