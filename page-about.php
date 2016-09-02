@@ -8,7 +8,6 @@ Template Name: About
 
 ?>
 
-
 <?php get_header(); ?>
 
 <section class="hero-header" style="background-image: url(<?php the_field('hero_header_image'); ?>);">
@@ -18,7 +17,7 @@ Template Name: About
 </section>
 
 <section class="quote">
-	
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -49,7 +48,7 @@ Template Name: About
 			<p>So now back to the music. Between raising a family and co-running a successful business, I only occasionally would pick up my guitar and play some songs from a music book or even less frequently mess around with my own music. If I heard a song I like or if I went to a concert, that voice in the back of my head would say, wow that’s great, wouldn’t it be fun to work on your music? But it never happened.</p>
 
 			<p>In the spring of 2013, my son Andrew who had starting taking drum lessons invited my daughter Dana (who tinkers on the piano) and I to a jam session with his instructor. We individually practiced some cover songs and then got together. It was the first time I sang into a mic while playing guitar since high school. Soon after, I started brushing the dust off of my songs but still did not have a clear goal. In May of 2013, I had a heart attack (despite passing a stress test just a month before). The good news is that there was minimal damage to my heart but it now dawned on me that life is short and I better set a goal for my music.</p>
-		</div> 	
+		</div>
 	</div>
 </div>
 </div>
@@ -98,11 +97,5 @@ Template Name: About
 		</div>
 	</div>
 </section>
-
-
-
-
-
-
 
 <?php get_footer(); ?>
