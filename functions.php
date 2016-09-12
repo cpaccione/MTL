@@ -6,7 +6,8 @@ add_theme_support('woocommerce'); // removes message from admin that WooCommerce
 
 function theme_styles() {
 	wp_enqueue_style( 'font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' );
-	wp_enqueue_style( 'roboto_css', 'https://fonts.googleapis.com/css?family=Roboto:300' );
+	wp_enqueue_style( 'bench_nine', 'https://fonts.googleapis.com/css?family=BenchNine' );
+	wp_enqueue_style( 'roboto_css', 'https://fonts.googleapis.com/css?family=Roboto:400,700' );
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
 	wp_enqueue_style( 'fancybox_css', get_template_directory_uri() . '/css/jquery.fancybox.css' );
 	wp_enqueue_style( 'lightbox_css', get_template_directory_uri() . '/css/lightbox.css' );
@@ -41,7 +42,7 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 //add_theme_support( 'menus' ); // This is to set the custom and dynamic menus
 register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'CAPE' ),
+    'primary' => __( 'Primary Menu', 'MTL' ),
 ) );
 
 require_once('wp_bootstrap_navwalker.php'); // Register Custom Navigation Walker
@@ -83,6 +84,87 @@ create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the 
 
 create_widget( 'Page Sidebar', 'page', 'Displays on the side of the pages with a sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
+
+// Custom Post Type: Albums
+
+function custom_post_albums() {
+
+	$labels = array(
+		'name' => 'Albums',
+		'singular_name' => 'Album',
+		'add_new' => 'Add Album',
+		'add_new_item' => 'Add Album',
+		'edit_item' => 'Edit Album',
+		'new_item' => 'New Album',
+		'all_items' => 'All Albums',
+		'view_item' => 'View Albums',
+		'search_items' => 'Search Albums',
+		'not_found' => 'No items found',
+		'not_found_in_trash' => 'No items found in trash',
+		'parent_item_colon' => 'Parent Album'
+	);
+
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => true,
+		'publicly_queryable' => true,
+		'query_var' => true,
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail'
+		),
+		'menu_position' => 5,
+		'exclude_from_search' => false
+	);
+	register_post_type( 'albums', $args );
+}
+add_action( 'init', 'custom_post_albums' );
+
+// Custom Album Taxonomies
+function album_taxonomies() {
+
+    //add new taxonomy hierarchical
+    $labels = array(
+        'name' => '',
+        'singular_name' => 'Genre',
+        'search_items' => 'Search Genres',
+        'all_items' => 'All Genres',
+        'parent_item' => 'Parent Genre',
+        'parent_item_colon' => 'Parent Genre:',
+        'edit_item' => 'Edit Genre',
+        'update_item' => 'Update Genre',
+        'add_new_item' => 'Add New Genre',
+        'new_item_name' => 'New Genre Name',
+        'menu_name' => 'Genres'
+    );
+
+    $args = array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'Genre' )
+    );
+
+    register_taxonomy( 'Genre', array('clients'), $args);
+
+    //add new taxonomy hierarchical
+
+    register_taxonomy( 'subGenre', 'clients', array(
+        'label' => 'subGenre',
+        'rewrite' => array( 'slug' => 'subGenre' ),
+        'hierarchical' => false
+    ) );
+
+}
+
+add_action( 'init', 'album_taxonomies');
 
 
 ?>

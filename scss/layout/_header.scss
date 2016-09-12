@@ -1,12 +1,40 @@
+// Navbar Logo
+
+.navbar-brand {
+
+	h1 {
+		font-size: 1.0625em;
+		font-weight: 700;
+		color: $lighter-blue;
+		float: right;
+		margin: 15px 0 0 15px;
+
+		@media #{$brk-small} {
+			font-size: .7em;
+			margin: 20px 0 0 6px;
+		}
+	}
+
+	svg {
+		width: 50px;
+		height: 50px;
+		float: left;
+	}
+
+}
+
 // navbar
 
 .navbar {
 	text-transform: uppercase;
+	position: absolute;
 }
 
 .navbar-default {
-	background-color: $nav-blue;
-	border-color: $nav-blue;
+	// background-color: $nav-blue;
+	// border-color: $nav-blue;
+	background-color: transparent;
+	border-color: transparent;
 }
 
 .navbar-default .navbar-brand {
@@ -68,6 +96,48 @@
 
 // Hero background images and copy
 
+.home-hero {
+	background: $blue;
+	height: 830px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	@media #{$brk-600} {
+		height: 100%;
+	}
+
+	.hero-copy {
+		font-family: 'BenchNine', sans-serif;
+		text-align: center;
+		padding: 255px 0 150px 0;
+		max-width: 1100px;
+
+		h1 {
+			color: $light-blue;
+			font-size: 12.1875em;
+			line-height: .8;
+			text-transform: uppercase;
+			// letter-spacing: 18px;
+
+			@media #{$brk-600} {
+				font-size: 6.25em;
+			}
+		}
+
+		h2 {
+			color: $lighter-blue;
+			font-size: 4.5em;
+
+			@media #{$brk-600} {
+				font-size: 2.5em;
+			}
+		}
+
+		}
+
+}
+
 .hero-header {
 	background-size: cover;
 	background-position: 0px -200px;
@@ -80,34 +150,22 @@
 	}
 }
 
-.shop-header {
-	background-image: url('../images/Martin.jpg');
+.store-header {
+	background-image: url('../images/default-hero.jpg');
 	background-size: cover;
-	background-position: 0px -200px;
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 300px;
+	height: 200px;
 }
 
-.hero-copy {
-	padding: 150px 0 150px 0;
-
-	h1 {
-		color: $white;
-		font-size: 5.625em;
-		font-weight: 300;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 18px;
-
-	@media #{$brk-small} {
-		font-size: 3em;
-		line-height: 300px;
-	}
-
-	}
-
-	@media #{$brk-small} {
-		padding: 0px;
-	}
+.default-header {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 200px;
 }
+//
+// 	@media #{$brk-small} {
+// 		padding: 0px;
+// 	}
+// }

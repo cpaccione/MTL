@@ -2,11 +2,13 @@
 
 ul.social-media {
   padding: 0px;
+  float: right;
 
   @media #{$brk-narrow} {
     text-align: center;
+    float: none;
   }
- 
+
   li {
     display: inline-block;
     padding-top: 35px;
@@ -330,11 +332,20 @@ footer {
 	background-color: $blue;
 	color: $white;
 	min-height: 120px;
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-tagline {
+    width: 212px;
+    padding-top: 25px;
+    margin: 0 auto;
+  }
 }
 
 .footer-copy {
-
-	padding-top: 25px; 
 
 	h5 {
 		font-size: 0.9375em;
@@ -349,5 +360,5 @@ footer {
   @media #{$brk-narrow} {
     text-align: center;
   }
-	
+
 }

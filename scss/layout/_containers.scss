@@ -4,16 +4,38 @@
 	text-align: center;
 
 	&-wrap {
-		max-width: 800px;
+		max-width: 900px;
 		margin: 0 auto;
-		padding-bottom: 50px;
+		padding: 50px 0 35px 0;
 	}
 
 }
 
-.news {
-	height: 450px;
+.home-music {
 	background-color: $secondary-grey;
+	padding: 73px 0 70px 0;
+
+	p {
+		color: $grey;
+		font-size: 1em;
+		line-height: 25px;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $light-blue;
+	}
+
+}
+
+// Single Album Post Type
+.album-detail {
+	padding: 100px 0 0 0;
+}
+
+.music-row {
+	padding: 25px 0 25px 0;
 }
 
 // Music Page
@@ -21,6 +43,13 @@
 .scroll-target {
 	padding-top: 30px;
 	visibility: hidden;
+}
+
+.music-intro {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 74px 0 60px 0;
 }
 
 .music {
@@ -69,6 +98,35 @@
 
 // About Page
 
+.about-intro {
+	background-color: $secondary-grey;
+	text-transform: uppercase;
+	text-align: center;
+	height: 192px;
+
+	&-wrap {
+		padding-top: 25px;
+	}
+
+	p {
+		color: $light-blue;
+		font-size: 2.1em;
+		line-height: 64px;
+		margin: 0;
+		padding: 0;
+	}
+
+	h2 {
+		font-family: 'BenchNine', sans-serif;
+		color: $light-blue;
+		font-size: 4.875em;
+		line-height: 71px;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
 .quote {
 	padding: 50px 0 0 0;
 	color: $orange;
@@ -106,9 +164,9 @@ figcaption {
 .about-second-copy {
 
 	p {
-		margin-bottom: 30px;	
+		margin-bottom: 30px;
 	}
-	
+
 }
 
 // Media Page
@@ -149,7 +207,7 @@ figcaption {
 // YouTube Videos
 
 .youtube-gallery {
-	
+
 }
 
 .video-info {
@@ -229,4 +287,3 @@ input[type="submit"] {
 	font-size: 1.25em;
 	letter-spacing: inherit;
 }
-

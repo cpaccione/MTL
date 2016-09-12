@@ -8,21 +8,35 @@ body {
 	font-size: 1em;
 }
 
-hr.orange {
-	border-top: 2px solid $orange;
+hr.grey {
+	border-top: 2px solid $light-grey;
 	margin-top: 0px;
 }
 
-hr.grey {
-	border-top: 1px solid $music-grey;
-	margin: 10px 0 10px 0;
-}
+// hr.grey {
+// 	border-top: 1px solid $music-grey;
+// 	margin: 10px 0 10px 0;
+// }
 
 // orange underline for h2 tags
 
 .underline-wrap {
 	text-align: center;
 	padding-top: 35px;
+
+	h2 {
+		font-size: 3.125em;
+		color: $light-grey;
+	}
+
+	.line {
+		hr {
+			margin: 0px;
+			border: 0;
+			border-top: 4px solid $light-grey;
+		}
+	}
+
 }
 
 .line {

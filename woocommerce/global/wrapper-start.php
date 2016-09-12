@@ -21,7 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="shop-header"></section>
+<!-- <section class="shop-header"></section> -->
+<section class="store-header"></section>
 
 <section class="store">
 	<div class="container">

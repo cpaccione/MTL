@@ -1,7 +1,7 @@
 .btn-primary.active {
 	background-color: $white;
-	color: $grey;
-	border-color: $orange;
+	color: $light-blue;
+	border-color: $light-blue;
 	border-radius: 0;
 	box-shadow: none;
 	-webkit-transition: ease-out 200ms;
@@ -10,9 +10,9 @@
 	transition: ease-out 200ms;
 
 	&:hover {
-		background-color: $grey;
+		background-color: $lighter-blue;
 		color: $white;
-		border-color: $orange;
+		border-color: $light-blue;
 		text-decoration: none;
 		-webkit-transition: ease-out 200ms;
 		-moz-transition: ease-out 200ms;

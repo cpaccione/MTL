@@ -3,8 +3,8 @@
 h2 {
 	font-size: 3.125em;
 	font-weight: 300;
-	letter-spacing: 5px;
-	color: $orange;
+	// letter-spacing: 5px;
+	color: $light-grey;
 }
 
 // contact form sub heading
@@ -18,19 +18,17 @@ h3 {
 
 h4 {
 	font-size: 1.875em;
-	color: $orange;
+	color: $grey;
 }
 
 h5 {
 	font-size: 1.5625em;
-	color: $orange;
-}
-
-// body copy 
-
-p {
-	font-size: 1em;
 	color: $grey;
 }
 
+// body copy
 
+p {
+	font-size: 1.25em;
+	color: $grey;
+}

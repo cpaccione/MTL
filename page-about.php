@@ -10,11 +10,56 @@ Template Name: About
 
 <?php get_header(); ?>
 
-<section class="hero-header" style="background-image: url(<?php the_field('hero_header_image'); ?>);">
-	<div class="hero-copy">
-		<h1><?php the_field('hero_header_copy_overlay') ;?></h1>
+<!-- default header -->
+<section class="default-header" style="background-image: url(<?php the_field('default_header'); ?>);"></section>
+
+<!-- page title section -->
+<section class="page-title">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="underline-wrap">
+					<h2>about</h2>
+					<div class="line">
+						<hr>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
 	</div>
 </section>
+
+<section class="about-intro">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="about-intro-wrap">
+					<p>
+						3/6 beatles + 2/6 elvis + 1/6 johnny cash =
+					</p>
+					<h2>mark thomas lambert sound</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p>
+					I’m a never too late Baby Boomer, writing Baby Boomer era rock/pop music for Baby Boomers. My songs are most influenced by The Beatles, Elvis and Johnny Cash. I still don’t read or write notes but I pen the words and create the melodies and then surround myself with professional musicians and technicians. I still work full time as a commercial real estate developer but enjoy finding time to work on the next song.
+				</p>
+			</div>
+		</div>
+</div>
+
+
+<!-- <section class="default-header" style="background-image: url(<?php the_field('default_header'); ?>);"></section>
 
 <section class="quote">
 
@@ -29,9 +74,9 @@ Template Name: About
 	</div>
 
 
-</section>
+</section> -->
 
-<section class="about-first-copy">
+<!-- <section class="about-first-copy">
 <div class="container">
 	<div class="row">
 	<div class="col-sm-6">
@@ -52,7 +97,7 @@ Template Name: About
 	</div>
 </div>
 </div>
-</section>
+</section> -->
 
 <section class="photos">
 	<div class="container">
@@ -60,13 +105,13 @@ Template Name: About
 			<div class="col-sm-6">
 				<figure class="figure">
 					<img class="figure-img center-block" src="<?php bloginfo('template_directory'); ?>/images/about-photo-past.jpg" alt="Mark Thomas Lamber - MTL">
-					<figcaption class="figure-caption text-sm-center">MUSKEGAN, MI - 19XX</figcaption>
+					<figcaption class="figure-caption text-sm-left">MUSKEGAN, MI - 19XX</figcaption>
 				</figure>
 			</div>
 			<div class="col-sm-6">
 				<figure class="figure">
 					<img class="figure-img center-block" src="<?php bloginfo('template_directory'); ?>/images/about-photo-present.jpg" alt="Mark Thomas Lambert - MTL">
-					<figcaption class="figure-caption text-sm-center">NASHVILLE, TN - 2015</figcaption>
+					<figcaption class="figure-caption text-sm-left">NASHVILLE, TN - 2015</figcaption>
 				</figure>
 			</div>
 		</div>
@@ -74,7 +119,7 @@ Template Name: About
 	</div>
 </section>
 
-<section class="about-second-copy">
+<!-- <section class="about-second-copy">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -93,6 +138,21 @@ Template Name: About
  				<p>Your friend,</p>
 
 				<p>Mark Thomas Lambert</p>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<section class="about-learn-more">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="underline-wrap">
+					<h2>learn more</h2>
+						<div class="line">
+							<hr class="orange">
+						</div>
+				</div>
 			</div>
 		</div>
 	</div>
