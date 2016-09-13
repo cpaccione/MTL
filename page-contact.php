@@ -13,17 +13,22 @@ Template Name: Contact
 <section class="default-header" style="background-image: url(<?php the_field('default_header'); ?>);"></section>
 
 <section class="contact-copy">
+
 	<div class="container">
+
+	<section class="page-title">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="underline-wrap">
-					<h2>EMAIL</h2>
+					<h2>contact</h2>
 					<div class="line">
-						<hr class="orange">
+						<hr>
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+
 		<div class="row">
 			<div class="col-md-12">
 				<div class="subhead">
@@ -31,7 +36,9 @@ Template Name: Contact
 				</div>
 			</div>
 		</div>
+
 	</div>
+
 </section>
 
 <section class="contact">
