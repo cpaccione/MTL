@@ -1,14 +1,10 @@
-<?php 
-/* 
+<?php
+/*
 Template Name:Checkout
 
 */
 get_header(); ?>
-<section class="hero-header" style="background-image: url(<?php the_field('hero_header_image'); ?>);">
-		<div class="hero-copy">
-		<h1><?php the_field('hero_header_copy_overlay') ;?></h1>
-		</div>
-</section>
+<section class="store-header"></section>
 <div class="container">
     <div class="col-md-12">
 
@@ -24,7 +20,7 @@ get_header(); ?>
 
         <?php endif; ?>
 
-    </div>  
+    </div>
 </div>
 
 <?php get_footer(); ?>

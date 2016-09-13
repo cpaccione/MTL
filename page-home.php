@@ -52,16 +52,18 @@ $counter = 0;
 <section class="home-music">
 	<div class="container">
 
-		<div class="row">
-			<div class="col-md-12">
-				<div class="underline-wrap">
-					<h2>music</h2>
-					<div class="line">
-						<hr>
+		<section class="page-title">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="underline-wrap">
+						<h2>music</h2>
+						<div class="line">
+							<hr>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 			<?php
 

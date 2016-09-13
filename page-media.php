@@ -22,17 +22,18 @@ $countertwo = 0;
 
 <section class="music-videos">
 	<div class="container">
-
+	<section class="page-title">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="underline-wrap">
-					<h2 id="videos">VIDEOS</h2>
+					<h2 id="videos">videos</h2>
 					<div class="line">
-						<hr class="orange">
+						<hr>
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
 
 		<div class="row">
 			<div class="col-md-12">
@@ -49,7 +50,7 @@ $countertwo = 0;
 
 			<?php if( have_rows('youtube_gallery') ): ?>
 
-				<?php while(  have_rows('youtube_gallery') ): the_row(); 
+				<?php while(  have_rows('youtube_gallery') ): the_row();
 
 				//vars
 				$link = get_sub_field('youtube_link');
@@ -77,7 +78,7 @@ $countertwo = 0;
 
 		<?php endif; ?>
 
-	
+
 		</div>
 
 		 <div class="row text-center">
@@ -97,39 +98,40 @@ $countertwo = 0;
 
 <section class="music">
 	<div class="container">
+		<section class="page-title">
 		<div class="row">
-
 			<div class="col-md-12">
 				<div class="underline-wrap">
-					<h2 id="photos">PHOTOS</h2>
+					<h2 id="photos">photos</h2>
 					<div class="line">
-						<hr class="orange">
+						<hr>
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
 
 		<?php if( have_rows('photo_section') ): ?>
 
-			<?php while( have_rows('photo_section') ): the_row(); 
+			<?php while( have_rows('photo_section') ): the_row();
 
 			// vars
 			$photo = get_sub_field('photo');
 			$thumbnail = get_sub_field('thumbnail');
 
-			
+
 			?>
 
 				<?php if($countertwo % 3 === 0) : echo '<div class="row photo-row">'; endif; ?>
 
 					<div class="col-sm-4">
-						<div class="photo-wrap">			
+						<div class="photo-wrap">
 							<a href="<?php echo $photo['url']; ?>" data-lightbox="MTL" data-title="<a href='<?php the_sub_field('hires'); ?>' download='MTL Photo' target='_blank'>HIGH RES</a> OR <a href='<?php the_sub_field('lowres'); ?>' download='MTL Photo' target='_blank'>LOW RES</a>"><img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
 						</div>
 					</div>
 
 				<?php $countertwo++; if($countertwo % 3 === 0) : echo '</div>'; endif; ?>
-		
+
 			<?php endwhile; ?>
 
 		<?php endif; ?>

@@ -17,19 +17,21 @@ $counter = 0;
 
 <?php get_header(); ?>
 <section class="default-header" style="background-image: url(<?php the_field('default_header'); ?>);"></section>
-
-<section class="page-title">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="underline-wrap">
-					<h2>music</h2>
-						<div class="line">
-							<hr>
+
+		<section class="page-title">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="underline-wrap">
+							<h2>music</h2>
+								<div class="line">
+									<hr>
+								</div>
 						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+		<!-- page-title close -->
+		</section>
 
 		<div class="row">
 			<div class="col-md-12">
@@ -43,8 +45,7 @@ $counter = 0;
 
 	<!-- container close -->
 	</div>
-	<!-- page-title close -->
-</section>
+
 
 	<?php
 

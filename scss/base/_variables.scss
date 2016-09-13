@@ -2,6 +2,7 @@
 
 $white : #ffffff;
 $black : #000000;
+$base-grey : #f2f2f2;
 
 // Theme color variables
 
@@ -17,7 +18,10 @@ $nav-blue : rgba(14,40,73,.9);
 
 // Media query breakpoints
 
+$brk-1200 : '(max-width: 1200px)';
 $brk-wide : '(max-width: 1024px)';
+$brk-992 : '(max-width: 992px)';
+$brk-768 : '(max-width: 768px)';
 $brk-narrow : '(max-width: 767px)';
 $brk-600 : '(max-width: 600px)';
 $brk-small : '(max-width: 500px)';

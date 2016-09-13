@@ -22,11 +22,12 @@ hr.grey {
 
 .underline-wrap {
 	text-align: center;
-	padding-top: 35px;
+	// padding-top: 35px;
 
 	h2 {
 		font-size: 3.125em;
 		color: $light-grey;
+		margin-top: 0;
 	}
 
 	.line {
