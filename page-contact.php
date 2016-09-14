@@ -32,7 +32,7 @@ Template Name: Contact
 		<div class="row">
 			<div class="col-md-12">
 				<div class="subhead">
-					<p>I'd love to hear from you so leave a mesage!</p>
+					<p>I'd love to hear from you! Please use the form below to send a message.</p>
 				</div>
 			</div>
 		</div>
@@ -45,7 +45,11 @@ Template Name: Contact
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<?php echo do_shortcode( '[contact-form-7 id="44" title="MTL Form"]' ); ?>
+				<div class="contact-wrap">
+					<?php //echo do_shortcode( '[contact-form-7 id="107" title="MTL Form"]' ); ?>	
+					<?php echo do_shortcode( '[contact-form-7 id="44" title="MTL Form"]' ); ?>	
+					<p class="small-copy-contact">We respect your privacy and will never sell, rent or loan your contact information to any third parties.</p>
+				</div>
 			</div>
 		</div>
 	</div>

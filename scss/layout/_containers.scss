@@ -11,6 +11,27 @@
 
 }
 
+.single-album-row {
+	padding-bottom: 75px;
+}
+
+.single-music {
+	background-color: $secondary-grey;
+	padding: 70px 0 70px 0;
+
+	p {
+		color: $grey;
+		font-size: 1em;
+		line-height: 25px;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $light-blue;
+	}
+}
+
 .home-music {
 	background-color: $secondary-grey;
 	padding: 0 0 70px 0;
@@ -32,6 +53,24 @@
 // Single Album Post Type
 .album-detail {
 	padding: 100px 0 0 0;
+
+	h3 {
+		text-transform: uppercase;
+		font-size: 1.50em;
+		color: $light-grey;
+	}
+
+	p {
+		color: $light-grey;
+	}
+
+	a {
+		color: $orange;
+
+		&:hover {
+			color: $light-blue;
+		}
+	}
 }
 
 .music-row {
@@ -152,6 +191,7 @@
 
 .about-learn-more {
 	background-color: $base-grey;
+	height: 485px;
 }
 
 .about-me-wrap {
@@ -173,6 +213,33 @@ figcaption {
 
 	@media #{$brk-narrow} {
 		text-align: center;
+	}
+
+}
+
+.pdf-list {
+	text-align: center;
+	padding: 0;
+
+	li {
+		display: inline-block;
+
+		img {
+			margin: 0 auto;
+		}
+
+		p {
+			color: $grey;
+			font-size: 1em;
+			line-height: 25px;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			color: $light-blue;
+		}
+
 	}
 
 }
@@ -214,10 +281,6 @@ figcaption {
 
 // YouTube Videos
 
-.youtube-gallery {
-
-}
-
 .video-info {
 	text-align: center;
 
@@ -239,6 +302,10 @@ figcaption {
 
 // Contact Page
 
+.contact {
+	background-color: $base-grey;
+}
+
 .subhead p {
 	text-align: center;
 	padding-bottom: 40px;
@@ -246,38 +313,74 @@ figcaption {
 
 // Contact Form 7
 
-input, select, textarea {
-	width: 100%;
-	background-color: #F1F2F2;
-	border: 0px;
+.contact-wrap {
+	max-width: 800px;
+	margin: 52px auto 92px auto;
+	background-color: $contact-form;
 }
 
-.wpcf7 p {
+.small-copy-contact {
+	font-size: 85%;
 	text-align: center;
-	font-size: 1.5625em;
-	color: $orange;
+	padding-bottom: 25px;
+}
+
+input, select, textarea {
+	color: #808080;
+	font-size: 1.0625rem;
+	width: 90%;
+	background-color: $white;
+	border: 0px;
+	border-radius: 8px;
+	margin-bottom: 25px;
+}
+
+div.wpcf7 {
+
+	padding: 40px 0 0 0;
+
+	p {
+		text-align: center;
+		color: #808080;
+	}
+
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+	color: #808080;
+	font-size: 1.0625rem;
+	padding: 16px;
 }
 
 input[type="text"],
 input[type="email"] {
+	color: #808080;
+	font-size: 1.0625rem;
 	min-height: 78px;
 }
 
 input[type="submit"] {
 	width: 158px;
 	height: 44px;
-	border: 1px solid $orange;
+	border: 1px solid $light-blue;
+	color: $light-blue;
 	background-color: transparent;
 	font-size: 1.125rem;
+	margin-bottom: 0;
 
 	&:hover {
 		-webkit-transition: ease-out 200ms;
 	    -moz-transition: ease-out 200ms;
 	    -o-transition: ease-out 200ms;
 	    transition: ease-out 200ms;
-		background-color: $grey;
+		background-color: $lighter-blue;
 		color: $white;
 	}
+}
+
+.legal-contact-form {
+	font-size: 0.9375em;
+	text-align: center;
 }
 
 // WooCommerce

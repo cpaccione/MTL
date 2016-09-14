@@ -87,6 +87,36 @@ Template Name: About
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="pdf-list">
+					<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
+						<p>
+							About MTL PDF
+						</p>
+						<p>
+							<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</p>
+					</li>
+					<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
+						<p>
+							Press Kit
+						</p>
+						<p>
+							<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</p>
+					</li>
+					<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
+						<p>
+							Press Release
+						</p>
+						<p>
+							<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </section>
 

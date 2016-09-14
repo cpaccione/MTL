@@ -347,6 +347,10 @@ footer {
 
 .footer-copy {
 
+  small {
+    color: $white;
+  }
+
 	h5 {
 		font-size: 0.9375em;
 		color: $white;

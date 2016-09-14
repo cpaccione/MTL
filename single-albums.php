@@ -10,7 +10,7 @@ $counter = 0;
 
 <div class="container">
 
-<div class="row">
+<div class="row single-album-row">
   <div class="album-detail">
   <div class="col-md-6">
     <?php
@@ -24,7 +24,7 @@ $counter = 0;
     <?php if( have_rows('link_list') ): ?>
       <?php while( have_rows('link_list') ): the_row(); ?>
 
-        <p><?php the_sub_field('link_title');?> <a href="<?php the_sub_field('link'); ?>" target="_blank"><?php the_sub_field('link_cta'); ?></a></p>
+        <p><?php the_sub_field('link_title');?> <a href="<?php the_sub_field('link'); ?>" target="<?php the_sub_field('target'); ?>"><?php the_sub_field('link_cta'); ?></a></p>
 
       <?php endwhile; ?>
     <?php endif; ?>
@@ -69,7 +69,7 @@ $counter = 0;
     </div>
   </div>
 </div>
-
+</div>
 <?php
 
   $args = array(
@@ -80,6 +80,8 @@ $counter = 0;
   $query = new WP_Query($args);
 
 ?>
+<section class="single-music">
+  <div class="container">
 
 
 <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
@@ -102,8 +104,9 @@ $counter = 0;
 
   <?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
 <?php endwhile; endif; wp_reset_postdata(); ?>
+
 </div>
-</div>
+</section>
 <!-- </section> -->
 <!-- music section end -->
 

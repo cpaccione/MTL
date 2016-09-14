@@ -305,7 +305,7 @@
 				<div class="col-sm-8">
 					<div class="footer-copy">
 						<h5>&copy; <?php echo date("Y"); ?> Mark Thomas Lambert Music LLC<h5>
-						<small>WARNING: All rights reserved. Unauthorized reproduction is a violation of applicable laws and is striclty prohibited.<br>FBI anti-piracy warning: unauthorized copying is punishable under federal law.</small>
+						<small>WARNING: All rights reserved. Unauthorized reproduction is a violation of applicable laws and is striclty prohibited.<br>FBI anti-piracy warning: unauthorized copying is punishable under federal law.</small>
 					</div>
 				</div>
 				<div class="col-sm-4">

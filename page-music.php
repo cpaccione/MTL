@@ -58,7 +58,7 @@ $counter = 0;
 
 	?>
 
-	<section class="home-music">
+	<section class="single-music">
 		<div class="container">
 
 	<?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
