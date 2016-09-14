@@ -2,7 +2,7 @@
 
 	<?php if ( ! dynamic_sidebar( 'page') ): ?>
 
-		<h3>Sidebar Setup</h3>
+		<h4>Sidebar Setup</h4>
 		<p>Please add widgets to the page sidebar to have them show here</p>
 		
 

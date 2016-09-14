@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<section class="store-header"></section>
 <div class="container">
 
     <div class="row">

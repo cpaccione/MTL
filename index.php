@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
+<section class="store-header"></section>
 
 <div class="container">
-
     <div class="row">
 
         <div class="col-md-12">
@@ -19,7 +19,8 @@
 
         <?php endif; ?>
 
-        </div>  
+        </div> 
+
     </div>
 </div>
 

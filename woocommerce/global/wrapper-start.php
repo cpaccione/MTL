@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<!-- <section class="shop-header"></section> -->
+<!-- custom MTL store header -->
 <section class="store-header"></section>
 
 <section class="store">
