@@ -38,7 +38,7 @@ $countertwo = 0;
 		<div class="row">
 			<div class="col-md-12">
 				<div class="video-wrapper">
-					<video width="100%" height="100%" controls alt="MTL featured video">
+					<video width="100%" height="100%" controls poster="<?php bloginfo('template_directory'); ?>/images/Nashville_Music_Image.png" alt="MTL featured video">
 						<source src="<?php bloginfo('template_directory'); ?>/video/nashville_tennessee_2.mp4" type="video/mp4">
 						<p>Your browser does not support this video file.</p>
 					</video>
