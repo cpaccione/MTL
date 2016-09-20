@@ -29,6 +29,7 @@ Template Name: About
 	</div>
 </section>
 
+<!-- mtl styles -->
 <section class="about-intro">
 	<div class="container">
 		<div class="row">
@@ -44,18 +45,20 @@ Template Name: About
 	</div>
 </section>
 
+<!-- about mtl -->
 <div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="about-me-wrap">
-					<p>
-						I’m a never too late Baby Boomer, writing Baby Boomer era rock/pop music for Baby Boomers. My songs are most influenced by The Beatles, Elvis and Johnny Cash. I still don’t read or write notes but I pen the words and create the melodies and then surround myself with professional musicians and technicians. I still work full time as a commercial real estate developer but enjoy finding time to work on the next song.
-					</p>
-				</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="about-me-wrap">
+				<p>
+					I’m a never too late Baby Boomer, writing Baby Boomer era rock/pop music for Baby Boomers. My songs are most influenced by The Beatles, Elvis and Johnny Cash. I still don’t read or write notes but I pen the words and create the melodies and then surround myself with professional musicians and technicians. I still work full time as a commercial real estate developer but enjoy finding time to work on the next song.
+				</p>
 			</div>
 		</div>
+	</div>
 </div>
 
+<!-- mtl young/old photo -->
 <section class="photos">
 	<div class="container">
 		<div class="row">
@@ -75,46 +78,56 @@ Template Name: About
 	</div>
 </section>
 
+<!-- about learn more section -->
 <section class="about-learn-more">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="underline-wrap">
-					<h2>learn more</h2>
+
+	<!-- page title section -->
+	<section class="page-title">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="underline-wrap">
+						<h2>learn more</h2>
 						<div class="line">
 							<hr>
 						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+	<!-- pdf container -->
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<ul class="pdf-list">
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
-						<p>
-							About MTL PDF
-						</p>
-						<p>
-							<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-						</p>
-					</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
-						<p>
-							Press Kit
-						</p>
-						<p>
-							<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-						</p>
-					</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
-						<p>
-							Press Release
-						</p>
-						<p>
-							<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-						</p>
-					</li>
-				</ul>
+				<div class="pdf-wrap">
+					<ul class="pdf-list">
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
+							<p>
+								About MTL PDF
+							</p>
+							<p>
+								<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+							</p>
+						</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
+							<p>
+								Press Kit
+							</p>
+							<p>
+								<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+							</p>
+						</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
+							<p>
+								Press Release
+							</p>
+							<p>
+								<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+							</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -192,6 +192,10 @@
 .about-learn-more {
 	background-color: $base-grey;
 	height: 485px;
+
+	@media #{$brk-600} {
+		height: 100%;
+	}
 }
 
 .about-me-wrap {
@@ -217,15 +221,29 @@ figcaption {
 
 }
 
+// .pdf-wrap {
+// 	margin: 0 auto;
+// 	width: 75%;
+// }
+
 .pdf-list {
 	text-align: center;
-	padding: 0;
+
+	@media #{$brk-600} {
+		padding-bottom: 25px;
+		padding-left: 0px;
+	}
 
 	li {
 		display: inline-block;
+		margin-right: 25px;
+
+		@media #{$brk-600} {
+			margin-right: 10px;
+		}
 
 		img {
-			margin: 0 auto;
+			padding-bottom: 15px;
 		}
 
 		p {
@@ -234,6 +252,12 @@ figcaption {
 			line-height: 25px;
 			margin: 0;
 			padding: 0;
+			text-align: left;
+
+			@media #{$brk-600} {
+				font-size: 0.75em;
+			}
+
 		}
 
 		a {
