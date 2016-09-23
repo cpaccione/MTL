@@ -46,7 +46,7 @@ $countertwo = 0;
 			</div>
 		</div>
 
-		<div class="row">
+		<!-- <div class="row"> -->
 
 			<?php if( have_rows('youtube_gallery') ): ?>
 
@@ -79,7 +79,7 @@ $countertwo = 0;
 		<?php endif; ?>
 
 
-		</div>
+		<!-- </div> -->
 
 		 <div class="row text-center">
             <div class="col-xs-12">
