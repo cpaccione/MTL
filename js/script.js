@@ -39,9 +39,13 @@ jQuery(document).ready(function($) {
 	});
 
   $('.song-row').on('click', '.expand-lyrics', function(event) {
-  	event.stopPropagation();
-  	event.preventDefault();
-  	$(this).closest('.song-row').find('.lyrics').slideToggle();
+  	// event.stopPropagation();
+  	// event.preventDefault();
+  	$(this).closest('.song-row').find('.lyrics').slideToggle('slow', "easeOutElastic", function(){
+			// Animation complete
+		});
+
+  	return false;
   });
 
  //  var yourAudio = document.getElementById('yourAudio'),
