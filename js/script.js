@@ -41,12 +41,29 @@ jQuery(document).ready(function($) {
   $('.song-row').on('click', '.expand-lyrics', function(event) {
   	// event.stopPropagation();
   	// event.preventDefault();
-  	$(this).closest('.song-row').find('.lyrics').slideToggle('slow', "easeOutElastic", function(){
+		$('.song-row').not($(this)).find('.lyrics').slideUp();
+  	$(this).closest('.song-row').find('.lyrics').slideToggle('slow', "linear", function(){
 			// Animation complete
+			  	// event.preventDefault();
+					$('html, body').animate({
+							scrollTop: $(this).closest('.lyrics').offset().top
+					}, 500);
 		});
-
-  	return false;
+		// if (!visible) {
+		// 		$('html, body').animate({
+		// 				scrollTop: $('.expalyrics').offset().top
+		// 		}, 500);
+		// }
+event.stopPropagation();
+event.preventDefault();
   });
+
+// 	$('.expand-lyrics').click(function(){
+// 		$('.lyrics').not($(this).find('.lyrics')).slideUp();
+// 		$(this).find('.lyrics').slideToggle();
+// 		e.stopImmediatePropagation();
+// });
+
 
  //  var yourAudio = document.getElementById('yourAudio'),
  //    ctrl = document.getElementById('audioControl');
