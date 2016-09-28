@@ -341,7 +341,7 @@ figcaption {
 	max-width: 800px;
 	margin: 52px auto 92px auto;
 	background-color: $contact-form;
-}
+
 
 .small-copy-contact {
 	font-size: 85%;
@@ -407,6 +407,8 @@ input[type="submit"] {
 	text-align: center;
 }
 
+}
+
 // WooCommerce
 
 .single-product {
@@ -421,4 +423,53 @@ input[type="submit"] {
 .products h2 {
 	font-size: 1.25em;
 	letter-spacing: inherit;
+}
+
+select {
+	border: 1px solid $lighter-blue;
+	border-radius: 4px;
+}
+
+.woocommerce {
+	#coupon_code {
+		width: 150px;
+	}
+}
+
+.woocommerce-billing-fields {
+
+	input .input-text {
+		border: 1px solid $light-grey;
+		// background-color: $light-grey;
+	}
+
+	input[type=text],
+	input[type=tel],
+	input[type=email] {
+		border: 1px solid $lighter-blue;
+		border-radius: 4px;
+		min-height: 40px;
+		// color: $white;
+	}
+
+}
+
+.woocommerce-shipping-fields {
+
+#order_comments {
+		border: 1px solid $lighter-blue;
+		border-radius: 4px;
+	}
+
+}
+
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce a.button.alt {
+	background-color: $light-blue;
+
+	&:hover {
+		background-color: $blue;
+	}
 }
