@@ -4,6 +4,31 @@
 add_theme_support( 'post-thumbnails' ); // this allows you to set a featured image
 add_theme_support('woocommerce'); // removes message from admin that WooCommerce is not supported
 
+// Filters
+add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
+add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
+add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
+ 
+ // Apply custom args to main query
+function custom_woocommerce_get_catalog_ordering_args( $args ) {
+	$orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
+ 
+	if ( 'oldest_to_recent' == $orderby_value ) {
+		$args['orderby'] = 'date';
+		$args['order'] = 'ASC';
+	}
+ 
+	return $args;
+}
+ 
+// Create new sorting method
+function custom_woocommerce_catalog_orderby( $sortby ) {
+	
+	$sortby['oldest_to_recent'] = __( 'Oldest to most recent', 'woocommerce' );
+	
+	return $sortby;
+}
+
 function theme_styles() {
 	wp_enqueue_style( 'font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' );
 	wp_enqueue_style( 'bench_nine', 'https://fonts.googleapis.com/css?family=BenchNine' );

@@ -51,7 +51,7 @@ Template Name: About
 		<div class="col-md-12">
 			<div class="about-me-wrap">
 				<p>
-					I’m a never too late Baby Boomer, writing Baby Boomer era rock/pop music for Baby Boomers. My songs are most influenced by The Beatles, Elvis and Johnny Cash. I still don’t read or write notes but I pen the words and create the melodies and then surround myself with professional musicians and technicians. I still work full time as a commercial real estate developer but enjoy finding time to work on the next song.
+					I’m a never too late Baby Boomer, writing Baby Boomer era rock/pop music for Baby Boomers. My songs are most influenced by The Beatles, Elvis and Johnny Cash. I don’t read or write notes but I pen the words and create the melodies and then surround myself with professional musicians and technicians. I work full time as a commercial real estate developer but enjoy finding time to work on the next song.
 				</p>
 			</div>
 		</div>
