@@ -159,6 +159,10 @@
 	padding: 74px 0 54px 0;
 }
 
+.photos {
+	padding-bottom: 3.125em;
+}
+
 .about-intro {
 	background-color: $base-grey;
 	text-transform: uppercase;
@@ -305,11 +309,17 @@ figcaption {
 }
 
 .photo-wrap {
-	margin: 0 auto;
+	img {
+		margin: 0 auto;
+	}
 }
 
 .photo-row {
 	padding-bottom: 25px;
+
+	@include respond (max-width, 768px) {
+		padding-bottom: 0px;
+	}
 }
 
 .fancybox-title {
