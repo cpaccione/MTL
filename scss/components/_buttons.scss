@@ -10,9 +10,9 @@
 	transition: ease-out 200ms;
 
 	&:hover {
-		background-color: $lighter-blue;
+		background-color: $blue;
 		color: $white;
-		border-color: $light-blue;
+		border-color: $blue;
 		text-decoration: none;
 		-webkit-transition: ease-out 200ms;
 		-moz-transition: ease-out 200ms;
@@ -28,7 +28,10 @@
   box-shadow: none;
 }
 
-.fa-play:before,
+.fa-play:before {
+	color: $light-blue;
+}
+
 .fa-pause:before {
-	color: $orange;
+	color: $blue;
 }

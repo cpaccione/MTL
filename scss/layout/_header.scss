@@ -67,7 +67,12 @@
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav > .active > a:hover {
-	color: $orange;
+	color: $light-blue;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: $light-blue;
+	background-color: transparent;
 }
 
 // Dropdown Menu

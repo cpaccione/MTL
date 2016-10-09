@@ -42,7 +42,7 @@ $counter = 0;
 		<div class="row text-center">
 			<div class="col-xs-12">
 				<div class="button-wrap">
-					<a href="/music"><button type="button" class="btn btn-primary btn-lg btn-block active">LEARN MORE</button></a>
+					<a href="/about/"><button type="button" class="btn btn-primary btn-lg btn-block active">LEARN MORE</button></a>
 				</div>
 			</div>
 		</div>

@@ -29,6 +29,11 @@
 
 	a {
 		color: $light-blue;
+		text-decoration: none;
+
+		&:hover {
+			color: $blue;
+		}
 	}
 }
 
@@ -46,6 +51,11 @@
 
 	a {
 		color: $light-blue;
+		text-decoration: none;
+
+		&:hover {
+			color: $blue;
+		}
 	}
 
 }
@@ -65,10 +75,10 @@
 	}
 
 	a {
-		color: $orange;
+		color: $light-blue;
 
 		&:hover {
-			color: $light-blue;
+			color: $blue;
 		}
 	}
 }
@@ -96,7 +106,7 @@
 	background-color: $secondary-grey;
 
 	a {
-		color: $orange;
+		color: $light-blue;
 		text-decoration: none;
 		text-transform: uppercase
 	}
@@ -262,6 +272,11 @@ figcaption {
 
 		a {
 			color: $light-blue;
+
+			&:hover {
+				color: $blue;
+				text-decoration: none;
+			}
 		}
 
 	}
@@ -293,7 +308,7 @@ figcaption {
 	text-align: center;
 
 	a {
-		color: $orange;
+		color: $light-blue;
 
 		&:hover {
 			color: $blue;
@@ -311,7 +326,7 @@ figcaption {
 	h3 {
 		font-size: 1.25em;
 		text-transform: uppercase;
-		color: $orange;
+		color: $light-blue;
 	}
 
 	p {
@@ -387,6 +402,7 @@ input[type="submit"] {
 	width: 158px;
 	height: 44px;
 	border: 1px solid $light-blue;
+	border-radius: 0;
 	color: $light-blue;
 	background-color: transparent;
 	font-size: 1.125rem;
@@ -394,10 +410,10 @@ input[type="submit"] {
 
 	&:hover {
 		-webkit-transition: ease-out 200ms;
-	    -moz-transition: ease-out 200ms;
-	    -o-transition: ease-out 200ms;
-	    transition: ease-out 200ms;
-		background-color: $lighter-blue;
+	  -moz-transition: ease-out 200ms;
+	  -o-transition: ease-out 200ms;
+	  transition: ease-out 200ms;
+		background-color: $blue;
 		color: $white;
 	}
 }

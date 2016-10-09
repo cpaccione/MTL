@@ -8,24 +8,24 @@ add_theme_support('woocommerce'); // removes message from admin that WooCommerce
 add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
 add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
 add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
- 
+
  // Apply custom args to main query
 function custom_woocommerce_get_catalog_ordering_args( $args ) {
 	$orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
- 
+
 	if ( 'oldest_to_recent' == $orderby_value ) {
 		$args['orderby'] = 'date';
 		$args['order'] = 'ASC';
 	}
- 
+
 	return $args;
 }
- 
+
 // Create new sorting method
 function custom_woocommerce_catalog_orderby( $sortby ) {
-	
+
 	$sortby['oldest_to_recent'] = __( 'Oldest to most recent', 'woocommerce' );
-	
+
 	return $sortby;
 }
 
@@ -123,7 +123,7 @@ function custom_post_albums() {
 		'edit_item' => 'Edit Album',
 		'new_item' => 'New Album',
 		'all_items' => 'All Albums',
-		'view_item' => 'View Albums',
+		'view_item' => 'View Album',
 		'search_items' => 'Search Albums',
 		'not_found' => 'No items found',
 		'not_found_in_trash' => 'No items found in trash',

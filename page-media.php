@@ -78,19 +78,15 @@ $countertwo = 0;
 
 		<?php endif; ?>
 
-
 		<!-- </div> -->
 
 		 <div class="row text-center">
-            <div class="col-xs-12">
-            	<div class="youtube-cta">
-            		<h5>SEE MORE VIDEOS</h5>
-            	</div>
-                <div class="button-wrap">
-                    <a href="https://www.youtube.com/channel/UChiB1DVDNSRu-NSMDSxSFag" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block active">VISIT YOUTUBE</button></a>
-                </div>
-            </div>
+      <div class="col-xs-12">
+        <div class="button-wrap">
+            <a href="https://www.youtube.com/channel/UChiB1DVDNSRu-NSMDSxSFag" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block active">VISIT YOUTUBE</button></a>
         </div>
+      </div>
+    </div>
 
 	</div>
 </section>
