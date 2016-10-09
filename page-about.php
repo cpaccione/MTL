@@ -104,7 +104,7 @@ Template Name: About
 					<ul class="pdf-list">
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
 							<p>
-								About MTL PDF
+								Long Bio PDF
 							</p>
 							<p>
 								<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
@@ -114,8 +114,8 @@ Template Name: About
 							<p>
 								Press Kit
 							</p>
-							<p>
-								<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+							<p>Coming Soon!
+								<!-- <a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a> -->
 							</p>
 						</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />

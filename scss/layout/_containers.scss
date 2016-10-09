@@ -19,6 +19,10 @@
 	background-color: $secondary-grey;
 	padding: 70px 0 70px 0;
 
+	img {
+		padding-bottom: 15px;
+	}
+
 	p {
 		color: $grey;
 		font-size: 1em;
@@ -40,6 +44,10 @@
 .home-music {
 	background-color: $secondary-grey;
 	padding: 0 0 70px 0;
+
+	img {
+		padding-bottom: 15px;
+	}
 
 	p {
 		color: $grey;
