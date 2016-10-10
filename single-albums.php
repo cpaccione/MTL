@@ -40,7 +40,7 @@ $counter = 0;
           <div class="song-row">
             <div class="row">
 
-              <div class="col-md-10">
+              <div class="col-sm-10">
                 <audio id="myAudio"></audio>
                 <div class="mp3Player" data-src="<?php the_sub_field('song_upload'); ?>" data-pos="0">
                     <a href="#" class="btnPlayPause button"><i class="fa fa-play"></i></a>
@@ -48,7 +48,7 @@ $counter = 0;
                 </div>
               </div>
 
-              <div class="col-md-2">
+              <div class="col-sm-2">
                 <a href="#" class="expand-lyrics">LYRICS</a>
               </div>
 

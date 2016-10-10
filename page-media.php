@@ -38,8 +38,23 @@ $countertwo = 0;
 		<div class="row">
 			<div class="col-md-12">
 				<div class="video-wrapper">
-					<video width="100%" height="100%" controls poster="<?php bloginfo('template_directory'); ?>/images/Nashville_Music_Image.png" alt="MTL featured video">
-						<source src="<?php bloginfo('template_directory'); ?>/video/nashville_tennessee_2.mp4" type="video/mp4">
+					<?php if( 'hero_video_poster' ):
+
+					$image = get_field('hero_video_poster');
+
+					?>
+						<video width="100%" height="100%" controls poster="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+
+					<?php endif; ?>
+
+					<?php if( 'hero_video_source' ):
+
+						$video = get_field('hero_video_source');
+
+						?>
+						<source src="<?php echo $video['url']; ?>" type="video/mp4">
+
+					<?php endif; ?>
 						<p>Your browser does not support this video file.</p>
 					</video>
 				</div>
