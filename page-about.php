@@ -65,7 +65,7 @@ Template Name: About
 			<div class="col-sm-6">
 				<figure class="figure">
 					<img class="figure-img center-block" src="<?php bloginfo('template_directory'); ?>/images/about-photo-past.jpg" alt="Mark Thomas Lamber - MTL">
-					<figcaption class="figure-caption text-sm-left">Muskegan, MI - 19XX</figcaption>
+					<figcaption class="figure-caption text-sm-left">Muskegan, MI - 1964</figcaption>
 				</figure>
 			</div>
 			<div class="col-sm-6">
@@ -102,30 +102,28 @@ Template Name: About
 			<div class="col-md-12">
 				<div class="pdf-wrap">
 					<ul class="pdf-list">
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
-							<p>
-								Long Bio PDF
-							</p>
-							<p>
-								<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-							</p>
-						</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
-							<p>
-								Press Kit
-							</p>
-							<p>Coming Soon!
-								<!-- <a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a> -->
-							</p>
-						</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/pdf_placeholder.jpg" alt="PDF" />
-							<p>
-								Press Release
-							</p>
-							<p>
-								<a href="#">DOWNLOAD NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-							</p>
-						</li>
+						<?php if( have_rows('pdf_list') ): ?>
+							<?php while( have_rows('pdf_list') ): the_row();
+
+								//vars
+								$thumbnail = get_sub_field('pdf_thumbnail');
+								$label = get_sub_field('link_label');
+								$file = get_sub_field('pdf_file');
+								$fileLabel = get_sub_field('pdf_label');
+
+							?>
+								<li>
+									<img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt'] ?>" />
+									<p>
+										<?php echo $label; ?>
+									</p>
+									<p>
+										<a href="<?php echo $file['url']; ?>" download="<?php echo $thumbnail['alt']; ?>"><?php echo $fileLabel; ?> <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+									</p>
+								</li>
+							<?php endwhile; ?>
+						<?php endif; ?>
+
 					</ul>
 				</div>
 			</div>

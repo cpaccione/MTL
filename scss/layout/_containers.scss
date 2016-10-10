@@ -140,6 +140,10 @@
 	display: none;
 	padding: 20px;
 
+	p {
+		font-size: 1em;
+	}
+
 	h2 {
 		font-size: 1.5625em;
 	}
@@ -252,6 +256,8 @@ figcaption {
 	text-align: center;
 
 	@media #{$brk-600} {
+		display: table;
+		margin: 0 auto;
 		padding-bottom: 25px;
 		padding-left: 0px;
 	}
@@ -262,6 +268,7 @@ figcaption {
 
 		@media #{$brk-600} {
 			margin-right: 10px;
+			display: block;
 		}
 
 		img {

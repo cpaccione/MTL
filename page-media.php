@@ -122,7 +122,7 @@ $countertwo = 0;
 
 					<div class="col-sm-4">
 						<div class="photo-wrap">
-							<a href="<?php echo $photo['url']; ?>" data-lightbox="MTL" data-title="<a href='<?php the_sub_field('hires'); ?>' download='MTL Photo' target='_blank'>HIGH RES</a> OR <a href='<?php the_sub_field('lowres'); ?>' download='MTL Photo' target='_blank'>LOW RES</a>"><img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
+							<a href="<?php echo $photo['url']; ?>" data-lightbox="MTL" data-title="<a href='<?php the_sub_field('hires'); ?>' target='_blank'>HIGH RES</a> OR <a href='<?php the_sub_field('lowres'); ?>' target='_blank'>LOW RES</a>"><img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>"></a>
 						</div>
 					</div>
 
