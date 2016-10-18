@@ -38,25 +38,15 @@ $countertwo = 0;
 		<div class="row">
 			<div class="col-md-12">
 				<div class="video-wrapper">
-					<?php if( 'hero_video_poster' ):
-
-					$image = get_field('hero_video_poster');
-
-					?>
-						<video width="100%" height="100%" controls poster="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-
-					<?php endif; ?>
-
-					<?php if( 'hero_video_source' ):
-
-						$video = get_field('hero_video_source');
-
-						?>
-						<source src="<?php echo $video['url']; ?>" type="video/mp4">
-
-					<?php endif; ?>
-						<p>Your browser does not support this video file.</p>
-					</video>
+					<!-- the class "videoWrapper169" means a 16:9 aspect ration video. Another option is "videoWrapper43" for 4:3. -->
+					<div class="videoWrapper videoWrapper169 js-videoWrapper">
+						<!-- YouTube iframe. -->
+						<!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+						<!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+						<iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/ePv_RxG6sag?autoplay=1"></iframe>
+						<!-- the poster frame - in the form of a button to make it keyboard accessible -->
+						<button class="videoPoster js-videoPoster" style="background-image:url(<?php bloginfo('template_directory');?>/images/Nashville_Music_Image.png);">Play video</button>
+					</div>
 				</div>
 			</div>
 		</div>

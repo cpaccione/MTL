@@ -17,10 +17,11 @@
 
 .single-music {
 	background-color: $secondary-grey;
-	padding: 70px 0 70px 0;
+	padding: 50px 0 70px 0;
 
 	img {
-		padding-bottom: 15px;
+		padding-bottom: 5px;
+		padding-top: 25px
 	}
 
 	p {
@@ -41,12 +42,29 @@
 	}
 }
 
+.song-row {
+
+	audio {
+		width: 100%;
+	}
+
+	.song-title {
+		font-size: 1.25em;
+		color: $grey;
+	}
+
+}
+
 .home-music {
 	background-color: $secondary-grey;
 	padding: 0 0 70px 0;
 
 	img {
 		padding-bottom: 15px;
+
+		@include respond(max-width, 767px) {
+			padding-top: 25px;
+		}
 	}
 
 	p {
@@ -138,7 +156,12 @@
 
 .lyrics {
 	display: none;
-	padding: 20px;
+	padding: 10px 50px;
+
+	.fa-times {
+		color: $light-blue;
+		padding: 20px;
+	}
 
 	p {
 		font-size: 1em;
@@ -173,7 +196,11 @@
 	text-align: center;
 	height: 192px;
 
-	@media #{$brk-992} {
+	// @media #{$brk-992} {
+	// 	height: 100%;
+	// }
+
+	@include respond(max-width, 992px) {
 		height: 100%;
 	}
 
@@ -272,7 +299,12 @@ figcaption {
 		}
 
 		img {
+			max-width: 128px;
 			padding-bottom: 15px;
+
+			@include respond(max-width, 600px) {
+				max-width: 100%;
+			}
 		}
 
 		p {
@@ -284,7 +316,7 @@ figcaption {
 			text-align: left;
 
 			@media #{$brk-600} {
-				font-size: 0.75em;
+				text-align: center;
 			}
 
 		}
@@ -310,8 +342,8 @@ figcaption {
 	margin: 0 auto;
 	padding: 20px 0 100px 0px;
 
-	@media #{$brk-small} {
-		width: 90%;
+	@include respond(max-width, 767px) {
+		width: 100%;
 	}
 }
 

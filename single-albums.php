@@ -41,11 +41,24 @@ $counter = 0;
             <div class="row">
 
               <div class="col-sm-10">
+                  <p class="song-title"><?php the_sub_field('song_title'); ?></p>
+              <audio controls>
+                <source src="<?php the_sub_field('song_upload'); ?>" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
                 <audio id="myAudio"></audio>
-                <div class="mp3Player" data-src="<?php the_sub_field('song_upload'); ?>" data-pos="0">
+<!--                 <div class="mp3Player" data-src="<?php //the_sub_field('song_upload'); ?>" data-pos="0">
                     <a href="#" class="btnPlayPause button"><i class="fa fa-play"></i></a>
-                    <?php the_sub_field('song_title'); ?>
-                </div>
+                    <?php //the_sub_field('song_title'); ?>
+                </div> -->
+<!--                 <div class="mp3Player" data-src="<?php //the_sub_field('song_upload'); ?>" data-pos="0">
+                      <button class="btnPlayPause button">►||</button>
+                      <a href="#" class="btnPlayPause button"><i class="fa fa-play"></i></a>
+                     <button class="btnMute button">MUTE</button>
+                      <span class="infoLabel">Audio #1</span>
+                      <?php //the_sub_field('song_title'); ?>
+                </div> -->
+
               </div>
 
               <div class="col-sm-2">
@@ -57,6 +70,11 @@ $counter = 0;
             <div class="row">
               <div class="col-md-12">
                 <div class="lyrics">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <i style="cursor: pointer;" class="fa fa-times fa-2x closeContent pull-right" aria-hidden="true"></i>  
+                    </div>
+                  </div>
                   <?php the_sub_field('song_lyrics'); ?>
                 </div>
               </div>
