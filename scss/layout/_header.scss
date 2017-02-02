@@ -107,27 +107,24 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
+	display: flex;
+	align-items: center;
 
 	@media #{$brk-600} {
-		height: 100%;
+		height: 400px;
 	}
 
 	.hero-copy {
 		font-family: 'BenchNine', sans-serif;
 		text-align: center;
-		padding: 255px 0 150px 0;
-		max-width: 1100px;
-
-		@include respond(max-width, 600px) {
-			padding: 100px 0 50px 0;
-		}
+		max-width: 800px;
+		margin: 0 auto;
 
 		h1 {
 			color: $light-blue;
 			font-size: 12.1875em;
 			line-height: .8;
 			text-transform: uppercase;
-			// letter-spacing: 18px;
 
 			@media #{$brk-600} {
 				font-size: 6.25em;
@@ -138,8 +135,16 @@
 			color: $lighter-blue;
 			font-size: 4.5em;
 
-			@media #{$brk-600} {
+			@include respond(max-width, 600px) {
 				font-size: 2.5em;
+			}
+
+			@include respond(max-width, 400px ) {
+				font-size: 2.2em;
+			}
+
+			@include respond(max-width, 320px) {
+				font-size: 2em;
 			}
 		}
 

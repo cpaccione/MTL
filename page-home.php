@@ -23,7 +23,7 @@ $counter = 0;
 			<div class="col-sm-12">
 				<div class="hero-copy">
 					<h1>WELCOME</h1>
-					<h2>I AM A BABY BOOMER MAKING BABY BOOMER MUSIC FOR BABY BOOMERS</h2>
+					<h2>I AM A BABY BOOMER MAKING BABY BOOMER MUSIC</h2>
 				</div>
 			</div>
 		</div>
