@@ -30,7 +30,7 @@ Template Name: About
 </section>
 
 <!-- mtl styles -->
-<section class="about-intro">
+<!-- <section class="about-intro">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -43,7 +43,7 @@ Template Name: About
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <!-- about mtl -->
 <div class="container">
@@ -79,10 +79,10 @@ Template Name: About
 </section>
 
 <!-- about learn more section -->
-<section class="about-learn-more">
+<!-- <section class="about-learn-more"> -->
 
 	<!-- page title section -->
-	<section class="page-title">
+	<!-- <section class="page-title">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -95,13 +95,13 @@ Template Name: About
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- pdf container -->
-	<div class="container">
+	<!-- <div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="pdf-wrap">
-					<ul class="pdf-list">
+					<ul class="pdf-list"> -->
 						<?php if( have_rows('pdf_list') ): ?>
 							<?php while( have_rows('pdf_list') ): the_row();
 
@@ -112,23 +112,23 @@ Template Name: About
 								$fileLabel = get_sub_field('pdf_label');
 
 							?>
-								<li>
-									<img src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt'] ?>" />
-									<p>
-										<?php echo $label; ?>
-									</p>
-									<p>
-										<a href="<?php echo $file['url']; ?>" download="<?php echo $thumbnail['alt']; ?>"><?php echo $fileLabel; ?> <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-									</p>
-								</li>
+								<!-- <li>
+									<img src="<?php //echo $thumbnail['url']; ?>" alt="<?php //echo $thumbnail['alt'] ?>" />
+									<p> -->
+										<?php //echo $label; ?>
+									<!-- </p>
+									<p> -->
+										<!-- <a href="<?php //echo $file['url']; ?>" download="<?php// echo $thumbnail['alt']; ?>"><?php //echo $fileLabel; ?> <i class="fa fa-chevron-right" aria-hidden="true"></i></a> -->
+									<!-- </p>
+								</li> -->
 							<?php endwhile; ?>
 						<?php endif; ?>
 
-					</ul>
+					<!-- </ul>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <?php get_footer(); ?>
