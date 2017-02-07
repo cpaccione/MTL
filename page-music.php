@@ -37,7 +37,7 @@ $counter = 0;
 			<div class="col-md-12">
 				<div class="music-intro">
 					<p>
-						I like to write songs about love, emotions, relationships, life and life's lessons that are foot tapping and tell a story — sometimes with a serious element and other times just intended to be fun. Depending on the song, I believe my music can fall in the pop- rock, soft rock, or country categories. My primary music influences come from The Beatles, Elvis Presley and Johnny Cash (showing my age), however, there are several other artists on my playlist that I enjoy listening to. I feel that my songs are primarily directed to my Baby Boomer generation. I see them as a second chance to relive the genre of music we grew up with.
+						I like to write songs about love, emotions, relationships, life and life's lessons that are foot tapping and tell a story — sometimes with a serious element and other times just intended to be fun. My primary music influences come from The Beatles, Elvis Presley and Johnny Cash (showing my age), however, there are several other artists on my playlist that I enjoy listening to. Songs are primarily directed to my Baby Boomer generation. I see them as a second chance to relive the genre of music we grew up with.
 					</p>
 				</div>
 			</div>

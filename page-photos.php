@@ -8,9 +8,16 @@ Template Name: Photos
 
 ?>
 
+<?php
+
+$countertwo = 0;
+
+
+?>
+
 <?php get_header(); ?>
 
-<section class="default-header" style="background-image: url(<?php the_field('default_header'); ?>);"></section>
+<section class="default-header" style="background-image: url(<?php the_field('hero_image'); ?>);"></section>
 
 <section class="music">
 	<div class="container">
