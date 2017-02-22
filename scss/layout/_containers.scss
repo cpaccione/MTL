@@ -196,6 +196,46 @@ audio::-webkit-media-controls-panel {
 
 // About Page
 
+.mtl-sound {
+	background-color: $lighter-blue;
+	color: $white;
+	height: 163px;
+	display: flex;
+	align-items: center;
+
+	h1 {
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: 'BenchNine', sans-serif;
+	}
+}
+
+.about-mtl {
+	height: 275px;
+	display: flex;
+	align-items: center;
+}
+
+.mtl-history {
+	background-color: $base-grey;
+
+	aside {
+		border-left: 4px solid $light-blue;
+		margin-left: 40px;
+
+		p {
+			font-size: 3.875em;
+			line-height: 65px;
+			color: $light-blue;
+			font-family: 'BenchNine', sans-serif;
+			margin: 0;
+			padding: 0 0 0 40px;
+		}
+	}
+}
+
 .page-title {
 	// padding: 74px 0 54px 0;
 	height: 200px;
