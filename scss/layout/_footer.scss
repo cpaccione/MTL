@@ -329,9 +329,19 @@ ul.social-media {
 
 .tagline {
   background-color: $blue;
-  height: 200px;
+  height: 125px;
   display: flex;
   align-items: center;
+
+  .footer-svg {
+    padding: 40px 0 20px 0;
+    width: 375px; 
+    margin: 0 auto;
+
+    @include respond(max-width, 400px) {
+      width: 250px;
+    }
+  }
 
   p {
     color: $white;
@@ -351,6 +361,8 @@ ul.social-media {
 }
 
 
+
+
 footer {
 	background-color: $blue;
 	color: $white;
@@ -364,7 +376,10 @@ footer {
   }
 
   // .tagline {
-  //   height: 100px;
+  //   svg {
+  //     width: 375px;
+  //     margin: 0 auto;
+  //   }
   // }
 
   .footer-tagline {

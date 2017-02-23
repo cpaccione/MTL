@@ -199,50 +199,91 @@ audio::-webkit-media-controls-panel {
 .mtl-sound {
 	background-color: $lighter-blue;
 	color: $white;
-	height: 163px;
-	display: flex;
-	align-items: center;
+	height: auto;
+	padding: 20px 0 20px 0;
+
+	@include respond(min-width, 600px) {
+		height: 163px;
+		display: flex;
+		align-items: center;
+	}
 
 	h1 {
+		font-size: 4.875em;
 		margin: 0;
 		padding: 0;
 		text-transform: uppercase;
 		text-align: center;
 		font-family: 'BenchNine', sans-serif;
+		font-size: 3em;
+
+		@include respond(min-width, 700px) {
+			font-size: 3.50em;
+		}
+
+		@include respond(min-width, 1000px) {
+			font-size: 4.875em;
+		}
+
 	}
 }
 
 .about-mtl {
-	height: 275px;
-	display: flex;
-	align-items: center;
+	height: auto;
+	padding: 20px 0 20px 0;
+
+	@include respond(min-width, 600px) {
+		height: 275px;
+		display: flex;
+		align-items: center;
+	}
 }
 
 .mtl-history {
 	background-color: $base-grey;
+	padding-bottom: 50px;
+
+	p {
+		margin-bottom: 20px;
+	}
 
 	aside {
 		border-left: 4px solid $light-blue;
-		margin-left: 40px;
+
+		@include respond(min-width, 500px) {
+			margin-left: 40px;
+		}
 
 		p {
 			font-size: 3.875em;
 			line-height: 65px;
 			color: $light-blue;
 			font-family: 'BenchNine', sans-serif;
-			margin: 0;
-			padding: 0 0 0 40px;
+			padding: 20px 0 20px 20px;
+    		margin: 30px 0 30px 0;
+
+
+			@include respond(min-width, 500px) {
+				padding: 20px 0 20px 40px;
+			}
 		}
 	}
 }
 
 .page-title {
-	// padding: 74px 0 54px 0;
-	height: 200px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
+	padding: 30px 0 30px 0;
+
+	@include respond(min-width, 600px) {
+		height: 200px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+}
+
+.section-background {
+	background-color: $base-grey;
 }
 
 .photos {
@@ -313,24 +354,19 @@ audio::-webkit-media-controls-panel {
 .about-me-wrap {
 	max-width: 850px;
 	margin: 0 auto;
-	padding: 0 0 55px 0;
+	// padding: 0 0 55px 0;
 	text-align: center;
 }
 
 figcaption {
 	color: $grey;
-	padding: 12px 0 10px 24px;
 	font-size: 0.875em;
 	font-style: italic;
+	padding: 10px 0 20px 0;
 
-	@media #{$brk-1200} {
-		padding: 12px 0 10px 0px;
+	@include respond(min-width, 992px) {
+		padding: 12px 0 50px 0;
 	}
-
-	@media #{$brk-narrow} {
-		text-align: center;
-	}
-
 }
 
 // .pdf-wrap {
@@ -603,5 +639,76 @@ select {
 
 	&:hover {
 		background-color: $blue;
+	}
+}
+
+
+// Press Page
+
+.press-docs {
+	height: 220px;
+	display: flex;
+	align-items: center;
+	background-color: $base-grey;
+
+	ul {
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		list-style: none;
+		max-width: 550px;
+		margin: 0 auto;
+
+		.title {
+			font-weight: 700;
+		}
+
+		.subhead {
+			font-size: 1rem;
+		}
+
+		.button {
+			display: inline-block;
+			font-size: 1rem;
+			font-weight: 700;
+			color: $light-blue;
+			background-color: transparent;
+			border: 1px solid $light-blue;
+			padding: 12px 25px 12px 25px;
+			transition: all 0.3s ease-in-out 0s;
+
+			&:hover {
+				background-color: $light-blue;
+				color: $white;
+				border-color: 1px solid $white;
+				transition: all 0.3s ease-in-out 0s;
+			}
+		}
+	}
+
+}
+
+.press-intro {
+	height: auto;
+	padding: 20px 0 20px 0;
+	text-align: center;
+
+	@include respond(min-width, 700px) {
+		display: flex;
+		align-items: center;
+		height: 125px;
+	}
+}
+
+.press-bg {
+	background-image: url(../images/mark_press.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 444px;
+
+	@include respond(max-width, 425px) {
+		background-position: 10% 50%;
 	}
 }
