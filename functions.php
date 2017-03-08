@@ -9,6 +9,9 @@ add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_cat
 add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
 add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
 
+// remove default sorting dropdown
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
  // Apply custom args to main query
 function custom_woocommerce_get_catalog_ordering_args( $args ) {
 	$orderby_value = isset( $_GET['orderby'] ) ? woocommerce_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
@@ -28,6 +31,57 @@ function custom_woocommerce_catalog_orderby( $sortby ) {
 
 	return $sortby;
 }
+ 
+// Filter that puts the variation in the message "added to cart" or "removed from cart"
+
+add_filter('wc_add_to_cart_message', 'handler_function_name', 10, 2);
+function handler_function_name($message, $product_id) {
+     $variation_id = isset( $_REQUEST[ 'variation_id' ] ) ? $_REQUEST[ 'variation_id' ] : null;
+    // Collect the product, product variations and attributes
+            $var_product = get_product( $variation_id );
+            $variations = $var_product->get_variation_attributes();
+            $attributes = $var_product->get_attributes();
+            $name_output = null;
+    if ( is_array( $variations ) ) {
+
+                foreach( $variations as $key => $value ) {
+
+                    $key = str_replace( 'attribute_', '', $key ); // Clean the attribute name
+
+                    $attribute = $attributes[$key]; // Get the attribute data
+
+                    // Check if the attribute is a taxonomy
+                    if( $attribute['is_taxonomy'] ){
+
+                        // Get the taxonomy name
+                        $attr_name = get_term_by( 'slug', $value, $key, 'ARRAY_A' );
+                        $attr_name = $attr_name['name'];
+
+                    } else {
+                        $attr_name = ucwords($value); // Clean up the custom attribute name
+                    }
+
+                    $name_output[] = $attr_name; // Load them into an array to be imploded
+                }
+            }
+
+            $product_title = get_the_title( $product_id ); // Get the main product title
+
+        $product_title .= ( $name_output ? ' ' . implode( ', ', $name_output ) : '' ); // Add variation(s) if not null
+
+        $added_text = sprintf( __( '"%s" was successfully added to your cart.', 'woocommerce' ), $product_title );
+
+     // Output success messages
+
+        $return_to  = apply_filters( 'woocommerce_continue_shopping_redirect', wp_get_referer() ? wp_get_referer() : home_url() );
+
+        $message    = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', $return_to, __( 'Continue Shopping', 'woocommerce' ), $added_text );
+
+        $message    = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', wc_get_page_permalink( 'cart' ), __( 'View Cart', 'woocommerce' ), $added_text );
+
+    return $message;
+}
+
 
 function theme_styles() {
 	wp_enqueue_style( 'font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' );

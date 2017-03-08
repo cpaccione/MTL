@@ -27,7 +27,7 @@ Template Name: Press
 				</div>
 			</div>
 		</section>
-
+<!-- 
 		<section class="press-intro">
 			<div class="container">
 				<div class="row">
@@ -38,7 +38,7 @@ Template Name: Press
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="press-docs">
 			<div class="container">
@@ -46,13 +46,15 @@ Template Name: Press
 					<ul>
 						<li>
 							<p class="title">Press Release</p>
-							<p class="subhead">Lorem ipsum, can include year</p>
-							<a class="button" href="<?php bloginfo('template_directory'); ?>/docs/press_release.pdf" download="Press Release">DOWNLOAD</a>
+							<!-- <p class="subhead">Lorem ipsum, can include year</p> -->
+<!-- 							<a class="button" href="<?php bloginfo('template_directory'); ?>/docs/press_release.pdf" download="Press Release">DOWNLOAD</a> -->
+							<a class="button">Coming Soon!</a>
 						</li>
 						<li>
 							<p class="title">Press Kit</p>
-							<p class="subhead">Lorem Ipsum, can include year</p>
-							<a class="button" href="<?php bloginfo('template_directory'); ?>/docs/press_kit.pdf" download="Press Kit">DOWNLOAD</a>
+							<!-- <p class="subhead">Lorem Ipsum, can include year</p> -->
+<!-- 							<a class="button" href="<?php bloginfo('template_directory'); ?>/docs/press_kit.pdf" download="Press Kit">DOWNLOAD</a> -->
+							<a class="button">Coming Soon!</a>
 						</li>
 					</ul>
 				</div>

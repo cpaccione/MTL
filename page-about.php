@@ -76,7 +76,10 @@ Template Name: About
 			<div class="row">
 				<div class="col-md-6">
 					<p>In four decades, singer-songwriter Mark Thomas Lambert raised three children, kept the fire going in a 43-year marriage, and became a successful industrial real estate broker and, for the last 33 years, business owner. The one thing he didn’t do is share the wonderful melodies and song ideas that had been rattling around in his head since his 1960s garage band days.</p>
-					<p>Now, at 65 years young, Mark welcomes a new era as a prolific singer-songwriter with the good old rockin’ debut, Never Too Late.</p>
+
+					<p>Now, at 65 years young, Mark welcomes a new era as a prolific singer-songwriter with a trio of good old rockin’ albums, Never Too Late, I Am The Storm, and I Will Meet You At The Moon.</p>
+
+					<p>“I’ve waited long enough to release music—fifty years of pent-up creativity.  This is the time to make it happen,” shares the Chicago-based artist.</p>
 				</div>
 				<div class="col-md-6">
 					<figure class="figure">
@@ -94,16 +97,17 @@ Template Name: About
 					</figure>
 				</div>
 				<div class="col-md-6">				
-					<p>“The album title’s message is that it’s never too late to follow your dreams,” shares the Chicago-based artist. “I’ve yearned to do this since middle school, but the years just kept sailing by—this is the time to make it happen.”</p>
-					<p>Mark’s tagline is being a baby boomer, making baby boomer music, for baby boomers. He draws from the Beatles, Elvis, and Johnny Cash to create a vibrant mix of golden oldie ballads, raucous rockabilly, and twanging pop-rock with lyrics that range from silly to sincere.</p>
+					<p>Mark’s tagline is “I am a baby boomer making baby boomer music.” He draws from the Beatles, Elvis, and Johnny Cash to create a vibrant mix of golden oldie ballads, raucous rockabilly, and twanging pop-rock with lyrics that range from silly to sincere.</p>
+
+					<p>Growing up, Mark processed his life in song, chronicling everything from teenage heartache to hard-to-swallow life lessons. Career demands and domestic responsibilities eventually pried him away from music. However, a few years ago a succession of epiphanies paved the way for Mark to finally record his songs.</p>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-md-12">
-					<p>pop-rock with lyrics that range from silly to sincere. 
-					Growing up, Mark processed his life in song, chronicling everything from teenage heartache to hard-to-swallow life lessons. Career demands and domestic responsibilities eventually pried him away from music. However, a few years ago a succession of epiphanies paved the way for Mark to finally record his songs.</p> 
 					<p>In the spring of 2013, one of Mark’s children invited him to a jam session. It was the first time he sang into a microphone since high school. Months later, he survived a heart attack.  “That’s when it dawned on me that life is short and I better pursue my music now,” recalls Mark.</p>
+
+					<p>With unflinching determination, Mark began to dismantle the obstacles that kept him from music. “One thing that held me back is that I didn’t fully understand the process of taking a song from start to finish,” admits Mark. Through reading about the music business, he stumbled upon Beaird Music Group in Nashville. The company is a one-stop production house staffed with hotshot musicians that can take acoustic-only songs and blossom them into professionally tracked recordings. In 2015, Mark made his first pilgrimage to Nashville to work with Beaird Music Group. Six trips later, he has a 38-song catalog of work that spans three albums.</p>
 				</div>
 			</div>
 
@@ -117,10 +121,15 @@ Template Name: About
 
 			<div class="row">
 				<div class="col-md-12">
-					<p>With unflinching determination, Mark began to dismantle the obstacles that kept him from music. “One thing that held me back is that I didn’t fully understand the process of taking a song from start to finish,” admits Mark. Through reading about the music business, he stumbled upon Beaird Music Group in Nashville. The company is a one-stop production house staffed with hotshot musicians that can take acoustic-only songs and blossom them into professionally tracked recordings. In 2015, Mark made his first pilgrimage to Nashville to work with Beaird Music Group. Six trips later, he has a 38-song catalog of work that spans three albums.</p>
-					<p>His first album installment, Never Too Late, is a time capsule of invigorating 1960s-style rock n’ roll with five of the 13 songs dating back to Mark’s teenage years. The revved up twang rocker “I'm Insecure Immature Inefficient Inconsistent” opens the record, and has the distinction of being the very first song Mark wrote 47 years ago. It’s a heart-on-his-sleeves ode to his then girlfriend, now wife, that fits perfectly alongside the newly written eight original compositions.</p> 
-					<p>In surveying the album, it’s remarkable to note how Mark’s optimism, commitment to sincere sentiments, and love of that fist wave of rock n’ roll never waned over the decades. Other Never Too Late album highlights include the empowering folk-rocker “Life Is What You Make It,” and the euphoric Beatles-esque numbers “It’s Nice To” and “One Guy Gal.”</p>
-					<p>Up next, Mark will be issuing two more albums, I Am The Storm, and, I Will Meet You at the Moon. Reflecting back on the album journey, so far, he says: “I remember going back to my hotel room after that first session, and listening to a MP3 the studio sent me from a song we tracked that day. I felt this feeling of pride and accomplishment. It was the start of something I need to keep doing.”</p>
+					<p>His first album installment, Never Too Late, is a time capsule of invigorating 1960s-style rock n’ roll with five of the 13 songs dating back to Mark’s teenage years. The revved up twang rocker “I'm Insecure Immature Inefficient Inconsistent” opens the record, and has the distinction of being the very first song Mark wrote 47 years ago</p>
+
+					<p>It’s a heart-on-his-sleeves ode to his then girlfriend, now wife, that fits perfectly alongside the newly written eight original compositions.  Other Never Too Late album highlights include the empowering folk-rocker “Life Is What You Make It,” the euphoric Beatles-esque “One Guy Gal,” and the moody rocker “Take A Chance On You.”  The later track oozes mystery as it addresses those nail-biting moments when you feel an undeniable attraction to someone and agonize over how those first few moments meeting them will play out.</p> 
+
+					<p>Mark’s sophomore album, I Am The Storm, was named in honor of Nashville session vocalist Adam Cunningham who sang backup on all three of Mark’s albums. The story goes that Adam was on a hot streak during the sessions and kept playfully quipping, “I am the storm” between recording takes.  In fitting with Adam’s infectious swagger, the title track is a surly rocker with a suffer-no-fools attitude.  The tenderly pastoral “Tell Me” is a wonderful complement to the aforementioned tune—it’s about earning trust and intimacy with a loved one.</p>
+
+					<p>The final episode in this baby boomer rock trilogy is I Will Meet You At The Moon. The title is a wonderful tribute to the love of Mark’s life. “My wife enjoys keeping track of all phases of the moon. When I travel, she always asks me ‘Did you look at the moon?’ The idea of two people in love sharing the moon from different locations inspired me,” Mark says.  Fittingly, the title track is a pensive and emotive pop-rock tune replete with lonesome pedal steel guitar. The revved up “Elaine” is based on a song seedling Mark had stowed away from his garage band days in the 1960s—that opening lyric line finally has a home five decades later!</p>
+
+					<p>I Will Meet You At The Moon’s “Don’t Count Us Out” epitomizes Mark’s journey and the lesson in his quest. It’s a baby boomer barnstormer about still loving rock n’ roll as much now as you did when you were a kid. “Just because my generation is older, doesn’t mean we still don’t love rock n’ roll—don’t count us out,” Mark says, laughing. “I still get in the car and blast my wife out with the radio. She says ‘What’s wrong with you?! Turn that thing down you’ll ruin your ears!’ I can’t help it, I love to rock out.”</p>
 				</div>
 			</div>
 			
