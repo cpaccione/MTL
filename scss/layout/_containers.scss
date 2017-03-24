@@ -675,11 +675,20 @@ select {
 .woocommerce button.button.alt.disabled,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt,
-.woocommerce a.button.alt {
+.woocommerce a.button.alt,
+.woocommerce a.button {
 	background-color: $light-blue;
 
 	&:hover {
 		background-color: $blue;
+	}
+}
+
+.woocommerce a.button {
+	color: $white;
+
+	&:hover {
+		color: $white;
 	}
 }
 

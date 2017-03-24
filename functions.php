@@ -8,6 +8,21 @@ add_theme_support('woocommerce'); // removes message from admin that WooCommerce
 add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args' );
 add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
 add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );    // 2.1 +
+ 
+function woo_custom_cart_button_text() {
+ 
+        return __( 'Add to Cart', 'woocommerce' );
+ 
+}
+
+add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' );    // 2.1 +
+ 
+function woo_archive_custom_cart_button_text() {
+ 
+        return __( 'Select', 'woocommerce' );
+ 
+}
 
 // remove default sorting dropdown
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
