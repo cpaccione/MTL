@@ -85,13 +85,13 @@ $countertwo = 0;
 
 		<!-- </div> -->
 
-		 <div class="row text-center">
-      <div class="col-xs-12">
-        <div class="button-wrap">
-            <a href="https://www.youtube.com/channel/UChiB1DVDNSRu-NSMDSxSFag" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block active">VISIT YOUTUBE</button></a>
-        </div>
-      </div>
-    </div>
+		<div class="row text-center">
+			<div class="col-xs-12">
+				<div class="button-wrap">
+					<a href="https://www.youtube.com/channel/UChiB1DVDNSRu-NSMDSxSFag" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block active">VISIT YOUTUBE</button></a>
+				</div>
+			</div>
+	    </div>
 
 	</div>
 </section>

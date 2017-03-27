@@ -84,13 +84,15 @@
 
 .dropdown-menu > li > a:hover {
 	background-color: transparent;
-	color: $orange;
+	// color: $orange;
+	color: $light-blue;
 }
 
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > a:hover {
 	background-color: transparent;
-	color: $orange;
+	// color: $orange;
+	color: $light-blue;
 }
 
 .dropdown-menu > .active > a {
