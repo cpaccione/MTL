@@ -645,6 +645,12 @@ select {
 	}
 }
 
+.woocommerce .woocommerce-info:before {
+font-family: WooCommerce;
+content: "\e017";
+// color: [YOUR-COLOR];
+}
+
 .woocommerce-billing-fields {
 
 	input .input-text {
