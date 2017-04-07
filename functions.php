@@ -47,55 +47,6 @@ function custom_woocommerce_catalog_orderby( $sortby ) {
 	return $sortby;
 }
  
-// Filter that puts the variation in the message "added to cart" or "removed from cart"
-
-add_filter('wc_add_to_cart_message', 'handler_function_name', 10, 2);
-function handler_function_name($message, $product_id) {
-     $variation_id = isset( $_REQUEST[ 'variation_id' ] ) ? $_REQUEST[ 'variation_id' ] : null;
-    // Collect the product, product variations and attributes
-            $var_product = get_product( $variation_id );
-            $variations = $var_product->get_variation_attributes();
-            $attributes = $var_product->get_attributes();
-            $name_output = null;
-    if ( is_array( $variations ) ) {
-
-                foreach( $variations as $key => $value ) {
-
-                    $key = str_replace( 'attribute_', '', $key ); // Clean the attribute name
-
-                    $attribute = $attributes[$key]; // Get the attribute data
-
-                    // Check if the attribute is a taxonomy
-                    if( $attribute['is_taxonomy'] ){
-
-                        // Get the taxonomy name
-                        $attr_name = get_term_by( 'slug', $value, $key, 'ARRAY_A' );
-                        $attr_name = $attr_name['name'];
-
-                    } else {
-                        $attr_name = ucwords($value); // Clean up the custom attribute name
-                    }
-
-                    $name_output[] = $attr_name; // Load them into an array to be imploded
-                }
-            }
-
-            $product_title = get_the_title( $product_id ); // Get the main product title
-
-        $product_title .= ( $name_output ? ' ' . implode( ', ', $name_output ) : '' ); // Add variation(s) if not null
-
-        $added_text = sprintf( __( '"%s" was successfully added to your cart.', 'woocommerce' ), $product_title );
-
-     // Output success messages
-
-        $return_to  = apply_filters( 'woocommerce_continue_shopping_redirect', wp_get_referer() ? wp_get_referer() : home_url() );
-
-        $message    = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', $return_to, __( 'Continue Shopping', 'woocommerce' ), $added_text );
-
-        $message    = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', wc_get_page_permalink( 'cart' ), __( 'View Cart', 'woocommerce' ), $added_text );
-
-    return $message;
-}
 
 
 function theme_styles() {
@@ -114,20 +65,20 @@ function theme_js() {
 
 	global $wp_scripts;
 
-	wp_register_script( 'html5_shiv', 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js', '', '', false );
+	//wp_register_script( 'html5_shiv', 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js', '', '', false );
 	// wp_register_script( 'respond_js', 'https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js', '', '', false );
 	// wp_register_script( 'jquery_ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', array('jquery'), '', true );
-	$wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
-	$wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
+	//$wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
+	//$wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
 
 	wp_enqueue_script( 'jquery_ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js' );
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
 	wp_enqueue_script('bootstrap_hover', get_template_directory_uri() . '/js/jquery.bootstrap-dropdown-hover.min.js', array('jquery', 'bootstrap_js'), '', true);
-	wp_enqueue_script( 'smooth_scroll_js', get_template_directory_uri() . '/js/jquery.smooth-scroll.min.js', array('jquery'), '', true );
+	//wp_enqueue_script( 'smooth_scroll_js', get_template_directory_uri() . '/js/jquery.smooth-scroll.min.js', array('jquery'), '', true );
 	wp_enqueue_script( 'fancybox_js', get_template_directory_uri() . '/js/jquery.fancybox.js', array('jquery'), '', true );
 	wp_enqueue_script( 'lightbox_js', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), '', true);
 	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery', 'bootstrap_js'), '', true );
-	wp_enqueue_script( 'scroll_js', get_template_directory_uri() . '/js/scroll.js', array('jquery', 'bootstrap_js'), '', true );
+	//wp_enqueue_script( 'scroll_js', get_template_directory_uri() . '/js/scroll.js', array('jquery', 'bootstrap_js'), '', true );
 
 }
 
