@@ -9,19 +9,19 @@ add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_cat
 add_filter( 'woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby' );
 add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );    // 2.1 +
- 
+
 function woo_custom_cart_button_text() {
- 
+
         return __( 'Add to Cart', 'woocommerce' );
- 
+
 }
 
 add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' );    // 2.1 +
- 
+
 function woo_archive_custom_cart_button_text() {
- 
+
         return __( 'Select', 'woocommerce' );
- 
+
 }
 
 // remove default sorting dropdown
@@ -46,7 +46,7 @@ function custom_woocommerce_catalog_orderby( $sortby ) {
 
 	return $sortby;
 }
- 
+
 
 
 function theme_styles() {
@@ -211,6 +211,8 @@ function album_taxonomies() {
 }
 
 add_action( 'init', 'album_taxonomies');
+
+
 
 
 ?>
