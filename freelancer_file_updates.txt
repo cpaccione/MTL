@@ -1,0 +1,8 @@
+wp-content\plugins\woocommerce\templates\cart\cart-totals.php
+wp-content\plugins\woocommerce\includes\class-wc-cart.php
+wp-content\plugins\woocommerce\includes\class-wc-form-handler.php
+wp-content\plugins\woocommerce\includes\shipping\free-shipping\class-wc-shipping-free-shipping.php
+wp-content\plugins\woocommerce\templates\checkout\form-checkout.php
+wp-content\plugins\woocommerce\includes\wc-cart-functions.php
+
+kjell.bear@gmail.com
