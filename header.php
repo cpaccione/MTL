@@ -55,7 +55,7 @@
           	</g>
           </g>
           </svg>
-          <h1>Mark Thomas Lambert</h1>
+          <!-- <h1>Mark Thomas Lambert</h1> -->
         </a>
       </div>
 

@@ -259,7 +259,7 @@
 				<div class="col-sm-4">
 					<ul class="social-media">
 						<li><a class="icon-link round facebook" href="https://www.facebook.com/MusicByMTL/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-						<li><a class="icon-link round youtube" href="https://www.youtube.com/channel/UChiB1DVDNSRu-NSMDSxSFag" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a></li>
+						<li><a class="icon-link round youtube" href="https://www.youtube.com/channel/UCrw9SJFQDeSvKRNdJnl3Jiw/videos" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a></li>
 						<li><a class="icon-link round twitter" href="https://twitter.com/MusicByMTL" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
 						<li><a class="icon-link round " href="mailto:mark@markthomaslambert.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
 					</ul>
