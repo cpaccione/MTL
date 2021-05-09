@@ -4,7 +4,19 @@ jQuery(document).ready(function($) {
 	$('img').addClass('img-responsive');
 
 	// Bootstrap dropdown on hover
-	$('.navbar [data-toggle="dropdown"]').bootstrapDropdownHover({});
+	//$('.navbar [data-toggle="dropdown"]').bootstrapDropdownHover({});
+
+	$('.menu-item-has-children').click(function() {
+		$('.menu-item-has-children .sub-menu').toggleClass('mtl-show');
+	});
+
+	$('.mobile-menu').click(function() {
+		$('.mobile-navigation').fadeIn();
+	})
+
+	$('.mobile-close-button').click(function() {
+		$('.mobile-navigation').fadeOut();
+	})
 
 	// fancybox
 	$(".fancybox").fancybox({

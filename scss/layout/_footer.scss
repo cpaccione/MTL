@@ -11,7 +11,7 @@ ul.social-media {
 
   li {
     display: inline-block;
-    padding-top: 35px;
+    // padding-top: 35px;
 
     @media #{$brk-narrow} {
       padding-top: 0px;
@@ -192,31 +192,18 @@ ul.social-media {
   background-color: $light-blue;
   // border: 2px solid $orange;
 }
-.icon-link:hover.facebook {
-  /*border: 2px solid #3b5998;*/
-  /*border: 2px solid #363794;*/
-  /*border: 2px solid #e73c24;*/
-}
+
 .icon-link:hover.tumblr {
   border: 2px solid #32506d;
 }
 .icon-link:hover.linkedin {
   border: 2px solid #007bb6;
 }
-.icon-link:hover.twitter {
-  /*border: 2px solid #00aced;*/
-  /*border: 2px solid #62a1a0;*/
-  /*background-color: #c2c2c2;*/
-}
-.icon-link:hover.google-plus {
-  /*border: 2px solid #dd4b39;*/
-}
+
 .icon-link:hover.reddit {
   border: 2px solid #8bbbe3;
 }
-.icon-link:hover.youtube {
-  /*border: 2px solid #df1c31;*/
-}
+
 .icon-link:hover.pinterest {
   border: 2px solid #b81621;
 }
@@ -229,12 +216,7 @@ ul.social-media {
 .icon-link:hover.soundcloud {
   border: 2px solid #f50;
 }
-.icon-link:hover.flickr {
-  /*border: 2px solid #ff0084;*/
-}
-.icon-link:hover.instagram {
-  /*border: 2px solid #517fa4;*/
-}
+
 .icon-link:hover .fa {
   // line-height: 50px;
   line-height: 44px;

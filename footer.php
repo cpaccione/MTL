@@ -249,7 +249,7 @@
 					</section>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row py-6">
 				<div class="col-sm-8">
 					<div class="footer-copy">
 						<h5>&copy; <?php echo date("Y"); ?> Mark Thomas Lambert Music LLC<h5>
